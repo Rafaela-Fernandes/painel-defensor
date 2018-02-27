@@ -1,0 +1,412 @@
+
+ .highcharts-container {
+ 	margin-top: 20px;
+ }
+ html {
+ 	position: relative;
+ 	width: 100%;
+ 	min-height: 100%;
+ 	/* será apagado*/
+ }
+ body {
+ 	background: #f5f5f5;
+ }
+ #menu {
+ 	flex-grow: 0;
+ }
+
+/* css das tabs da pagina principal*/
+    .background-sessao {
+ 	background: #fff;
+ 	border: solid #dee2e6 1px;
+ 	margin: 0 2px;
+ }
+	#tabs-ancoras a {
+		color: #343a40;
+		text-align: center;
+		font-weight: 500;
+		width: 14.28%;
+	}
+	#nav-principal{
+		
+		background:#dedede 
+	}
+	#tabs-ancoras p {
+
+		margin-top: 5rem;
+	}
+
+
+	#agendamentos.active,
+	#agendamentos:hover {
+		background-image: url("../img/agendamentos2.png");
+		background-repeat: no-repeat;
+		background-position: 50% 25%;
+		background-color: #343a40;
+		height: auto;
+		color: #fff;
+		border-radius: 0 0 0 0 !important;
+	}
+	#agendamentos {
+		background-image: url("../img/agendamentos.png");
+		background-repeat: no-repeat;
+		background-position: 50% 25%;
+	}
+
+/*-----------------------------------*/
+	#extra-judicial.active,
+	#extra-judicial:hover {
+		background-image: url("../img/extra-judicial2.png");
+		background-repeat: no-repeat;
+		background-position: 50% 25%;
+		background-color: #343a40;
+		height: auto;
+		color: #fff;
+		border-radius: 0 0 0 0 !important;
+	}
+	#extra-judicial {
+		background-image: url("../img/extra-judicial.png");
+		background-repeat: no-repeat;
+		background-position: 50% 25%;
+	}
+
+/*-----------------------------------*/
+	#audiencias.active,
+	#audiencias:hover {
+		background-image: url("../img/audiencias2.png");
+		background-repeat: no-repeat;
+		background-position: 50% 25%;
+		background-color: #343a40;
+		height: auto;
+		color: #fff;
+		border-radius: 0 0 0 0 !important;
+	}
+	#audiencias {
+		background-image: url("../img/audiencias.png");
+		background-repeat: no-repeat;
+		background-position: 50% 25%;
+	}
+/*-----------------------------------*/
+	#processos.active,
+	#processos:hover {
+		background-image: url("../img/processos2.png");
+		background-repeat: no-repeat;
+		background-position: 50% 25%;
+		background-color: #343a40;
+		height: auto;
+		color: #fff;
+		border-radius: 0 0 0 0 !important;
+	}
+	#processos {
+		background-image: url("../img/processos.png");
+		background-repeat: no-repeat;
+		background-position: 50% 25%
+	}
+
+/*-----------------------------------*/
+	#prazos-tarefas.active,
+	#prazos-tarefas:hover {
+		background-image: url("../img/prazos2.png");
+		background-repeat: no-repeat;
+		background-position: 50% 25%;
+		background-color: #343a40;
+		height: auto;
+		color: #fff;
+		border-radius: 0 0 0 0 !important;
+	}
+	#prazos-tarefas {
+		background-image: url("../img/prazos.png");
+		background-repeat: no-repeat;
+		background-position: 50% 25%
+	}
+
+/*-----------------------------------*/
+	#peticoes.active,
+	#peticoes:hover {
+		background-image: url("../img/peticoes2.png");
+		background-repeat: no-repeat;
+		background-position: 50% 25%;
+		background-color: #343a40;
+		height: auto;
+		color: #fff;
+		border-radius: 0 0 0 0 !important;
+	}
+	#peticoes {
+		background-image: url("../img/peticoes.png");
+		background-repeat: no-repeat;
+		background-position: 50% 25%
+	}
+
+/*-----------------------------------*/
+	#graficos.active,
+	#graficos:hover {
+		background-image: url("../img/graficos2.png");
+		background-repeat: no-repeat;
+		background-position: 50% 25%;
+		background-color: #343a40;
+		height: auto;
+		color: #fff;
+		border-radius: 0 0 0 0 !important;
+	}
+	#graficos {
+		background-image: url("../img/graficos.png");
+		background-repeat: no-repeat;
+		background-position: 50% 25%
+	}
+
+ /*---------------Fim css da tabs-----------------*/
+
+ #notificacoes {
+ 	position: absolute;
+ 	right: 0;
+ 	z-index: 3;
+ 	display: none;
+ 	min-height: 100%;
+	background-color:rgba(10, 10, 10, 0.70); 
+ }
+
+
+/* css  icones next e prev dos calendario, ajustar para n precisar dessa exportação*/
+ @font-face {
+ 	font-family: 'Glyphicons Halflings';
+ 	src: url(https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.eot);
+ 	src: url(https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"), url(https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.woff2) format("woff2"), url(https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.woff) format("woff"), url(https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.ttf) format("truetype"), url(https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.svg) format("svg");
+ }
+ .glyphicon-chevron-left:before {
+ 	content: "\e079";
+ }
+ .glyphicon-chevron-right:before {
+ 	content: "\e080";
+ }
+ .glyphicon {
+ 	position: relative;
+ 	top: 1px;
+ 	display: inline-block;
+ 	font-family: 'Glyphicons Halflings';
+ 	font-style: normal;
+ 	font-weight: 400;
+ 	line-height: 1;
+ 	-webkit-font-smoothing: antialiased;
+ 	-moz-osx-font-smoothing: grayscale;
+ }
+
+ .voltar-ao-topo {
+ 	position: fixed;
+ 	bottom: 1em;
+ 	right: 2.1em;
+ 	text-decoration: none;
+ 	color: white;
+ 	background-color: rgba(0, 0, 0, 0.3);
+ 	padding: 0.3em;
+ 	display: none;
+ }
+ .voltar-ao-topo:hover {
+ 	background-color: rgba(0, 0, 0, 0.6);
+ 	text-decoration: none;
+ 	color: white;
+ }
+
+ input {
+ 	box-shadow: 0 0 0 0 !important;
+ }
+ #formulario-tarefas, #formulario-acoes-ajuizadas,#formulario-resolucao-extraJudicial {
+ 	display: none;
+ 	border: solid #cdd3d9 1px;
+ }
+ 
+.modal-calendario,.modal-extrajudicial{
+ 	width: 150%;
+	border-radius: 0.5rem;
+ }
+
+
+ .font-td {
+ 	font-size: 0.8em;
+ }
+
+ table {
+ 	border-bottom: solid #dee2e6 1px;
+ 	text-align: center;
+ }
+
+ img {
+ 	cursor: pointer;
+ }
+
+ .span-atendimento {
+ 	cursor: pointer;
+ }
+
+ 
+
+/*--------------css para mobile--------------------------------*/
+ 
+ @media screen and (max-width: 768px) {
+ 	.mobile {
+ 		padding: 20px 15px !important;
+ 	}
+ 	.background-sessao {
+ 		margin-left: 7px !important;
+ 		margin-right: 7px !important;
+ 	}
+ 	tbody {
+ 		font-size: 0.6rem !important;
+ 	}
+ 	thead {
+ 		font-size: 0.7rem !important;
+ 	}
+ 	.table th,
+ 	.table td {
+ 		padding: 0.3rem;
+ 	}
+ 	.imgs-tarefas {
+ 		width: 20px;
+ 		height: 20px;
+ 	}
+ 	.contadores li {
+ 		margin-top: 2rem;
+ 		display: block !important;
+ 		,
+ 	}
+ 	h5 {
+ 		font-size: 1rem;
+ 	}
+ 	.tab-mobile div a {
+ 		padding: .5rem 0.2rem;
+ 	}
+ 	#content-modal {
+ 		width: 100%;
+ 	}
+ 	.tabela-responsiva {
+ 		display: block;
+ 		width: 100%;
+ 		overflow-x: auto;
+ 		-ms-overflow-style: -ms-autohiding-scrollbar;
+ 	}
+ 	.span-data {
+ 		margin-left: 13rem;
+ 	}
+	 
+	 #tabs-ancoras a {
+	width: 100%;
+		 
+	
+}
+
+	 #sessao-menu{
+		 width: 100% !important;
+		 min-height: auto !important;;
+	 }
+	 
+	 	
+	
+
+ }
+
+/* css dos caontadores geral*/
+ .contador-agendamento span:first-child {
+ 	background: #17a2b8;
+ 	color: white;
+ 	text-align: center;
+ 	font-weight: 400;
+ 	border: solid #17a2b8 1px;
+ 	border-radius: 7px 0px 0px 7px;
+ }
+ .contador-agendamento span:last-child {
+ 	color: #17a2b8;
+ 	text-align: center;
+ 	font-weight: 500;
+ 	border: solid #17a2b8 1px;
+ 	border-radius: 0px 7px 7px 0px;
+ }
+ 
+/* css contadores inicial/retorno/todos */
+ .contador-inicial button:first-child {
+ 	background: #27ae60;
+ 	color: white;
+ 	text-align: center;
+ 	font-weight: 400;
+ 	border: solid #27ae60 1px;
+ 	border-radius: 7px 0px 0px 7px;
+ 	cursor: pointer;
+ }
+ .contador-inicial span:last-child {
+ 	background: white;
+ 	color: #27ae60;
+ 	text-align: center;
+ 	font-weight: 400;
+ 	border: solid #27ae60 1px;
+ 	border-radius: 0px 7px 7px 0px;
+ }
+ .contador-todos button:first-child {
+ 	background: #17a2b8;
+ 	color: white;
+ 	text-align: center;
+ 	font-weight: 400;
+ 	border: solid #17a2b8 1px;
+ 	border-radius: 7px 0px 0px 7px;
+ 	cursor: pointer
+ }
+ .contador-todos span:last-child {
+ 	background: white;
+ 	color: #17a2b8;
+ 	text-align: center;
+ 	font-weight: 400;
+ 	border: solid #17a2b8 1px;
+ 	border-radius: 0px 7px 7px 0px;
+ }
+ .contador-retorno button:first-child {
+ 	background: #fd7e14;
+ 	color: white;
+ 	text-align: center;
+ 	font-weight: 400;
+ 	border: solid #fd7e14 1px;
+ 	border-radius: 7px 0px 0px 7px;
+ 	cursor: pointer;
+ }
+ .contador-retorno span:last-child {
+ 	background: white;
+ 	color: #fd7e14;
+ 	text-align: center;
+ 	font-weight: 400;
+ 	border: solid #fd7e14 1px;
+ 	border-radius: 0px 7px 7px 0px;
+ }
+
+
+
+ #nav-personalizada li:hover {
+ 	background: #404952;
+ 	border-radius: 50px;
+ }
+
+#div-menu:hover{
+	 	background: #404952;
+ 
+	
+}
+#div-menu{
+	 padding-left: 0;
+}
+
+
+
+ .dropdown-personalizado a {
+ 	color: white;
+ 	text-decoration: none;
+ }
+ .dropdown-personalizado ul li {
+ 	padding: 10px 0;
+ }
+ #bordas-dropdown ul li:first-child {
+ 	border-bottom: solid #868e96 1px;
+ }
+ .dropdown-personalizado ul li:hover {
+ 	background: #4a535c;
+ 	border-radius: 0 !important;
+ }
+ .dropdown-personalizado ul {
+ 	padding: 0;
+ }
+
+
