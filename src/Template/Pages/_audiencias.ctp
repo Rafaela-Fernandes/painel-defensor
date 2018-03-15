@@ -1,9 +1,9 @@
 <!-- Inicio informações do dia audiências-->
 <div class="col-md-6 py-4 px-5 mobile">
 
-    <h5 class="text-secondary">Cadastrar Audiências <img src="../img/mais.png" alt="" id="exibir-form-audiencias"> </h5>
-    <form class="bg-light p-3 mb-3" id="formulario-cadastrar-audiencias">
-   	     <div class="form-row">
+	<h5 class="text-secondary">Cadastrar Audiências <img src="../img/mais.png" alt="" id="exibir-form-audiencias"> </h5>
+	<form class="bg-light p-3 mb-3" id="formulario-cadastrar-audiencias">
+		<div class="form-row">
 			<div class="input-group mb-3 col-md-12">
 				<div class="input-group-prepend">
 					<span class="input-group-text text-secondary">Nome Assistido</span>
@@ -11,7 +11,7 @@
 				<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 			</div>
 		</div>
-    	 <div class="form-row">
+		<div class="form-row">
 			<div class="input-group mb-3 col-md-6">
 				<div class="input-group-prepend">
 					<span class="input-group-text text-secondary">Data</span>
@@ -23,21 +23,35 @@
 					<span class="input-group-text text-secondary">Hora</span>
 				</div>
 				<input type="" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-			 </div>
+			</div>
 		</div>
 		<div class="form-row">
-				<div class="input-group mb-3 col-md-12">
+			<div class="input-group mb-3 col-md-12">
 				<div class="input-group-prepend">
 					<span class="input-group-text text-secondary">local</span>
 				</div>
 				<input type="" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 			</div>
 		</div>
-		
-			<button type="submit" class="btn btn-success btn-block mt-2"> Cadastrar</button>
-		
-    </form>
-    
+
+		<div class="form-row">
+			<div class="form-group col-md-12">
+				<span> Em substituição</span>
+				<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="substituicao-sim" name="substituicao-audiencias" class="custom-control-input">
+					<label class="custom-control-label" for="substituicao-sim">Sim</label>
+				</div>
+				<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="substituicao-nao" name="substituicao-audiencias" class="custom-control-input">
+					<label class="custom-control-label" for="substituicao-nao">Não</label>
+				</div>
+			</div>
+		</div>
+
+		<button type="submit" class="btn btn-success btn-block mt-2"> Cadastrar</button>
+
+	</form>
+
 	<div class="mt-4 input-group contador-agendamento">
 		<span class="w-50 py-2">Total Audiências</span>
 		<span class="w-50 py-2">100</span>
@@ -97,7 +111,7 @@
 				<td>Forum AA</td>
 				<td>Celia Maria Dantas</td>
 			</tr>
-		
+
 		</tbody>
 	</table>
 

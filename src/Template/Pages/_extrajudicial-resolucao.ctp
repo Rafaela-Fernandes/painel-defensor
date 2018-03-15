@@ -118,17 +118,29 @@
 		
 		 
 		<div class="form-row">
-		   	<div class="form-group col-md-12 mt-4">
+		   	<div class="form-group col-md-12 mt-2">
 				 <span> Houve êxito na tentativa de resoluçao extrajudicial</span>
-				 <div class="custom-control custom-radio custom-control-inline ml-4">
-					<input type="radio"  name="customRadioInline1" class="custom-control-input">
-					<label class="custom-control-label" for="">Sim</label>
+				 	<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="resolucao-sim" name="resolucao-extraJudicial" class="custom-control-input">
+					<label class="custom-control-label" for="resolucao-sim">Sim</label>
 				</div>
 				<div class="custom-control custom-radio custom-control-inline">
-				<input type="radio"  name="customRadioInline1" class="custom-control-input">
-				<label class="custom-control-label" for="">Nao</label>
+					<input type="radio" id="resolucao-nao" name="resolucao-extraJudicial" class="custom-control-input">
+					<label class="custom-control-label" for="resolucao-nao">Não</label>
+				</div>
 			</div>
+			<div class="form-group col-md-12">
+				<span> Em substituição</span>
+				<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="substituicao-resolucao-sim" name="substituicao-resolucao" class="custom-control-input">
+					<label class="custom-control-label" for="substituicao-resolucao-sim">Sim</label>
+				</div>
+				<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="substituicao-resolucao-nao" name="substituicao-resolucao" class="custom-control-input">
+					<label class="custom-control-label" for="substituicao-resolucao-nao">Não</label>
+				</div>
 			</div>
+			
 		</div>
 		<button type="submit" class="btn btn-success btn-block"> Cadastrar</button>
 	</form>

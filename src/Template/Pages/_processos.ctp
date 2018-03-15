@@ -62,6 +62,20 @@
 				</select>
 			</div>
 		</div>
+		
+		<div class="form-row">
+		   	<div class="form-group col-md-12 mt-2">
+				 <span> Em substituição</span>
+				 	<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="processos-sim" name="processos" class="custom-control-input">
+					<label class="custom-control-label" for="processos-sim">Sim</label>
+				</div>
+				<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="processos-nao" name="processos" class="custom-control-input">
+					<label class="custom-control-label" for="processos-nao">Não</label>
+				</div>
+			</div>	
+		</div>
 
 		<button type="submit" class="btn btn-success btn-block mt-3"> Cadastrar</button>
 	</form>

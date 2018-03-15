@@ -34,6 +34,19 @@
 				</div>
 			</div>
 		</div>
+		<div class="form-row">
+		   	<div class="form-group col-md-12 mt-2">
+				 <span> Em substituição</span>
+				 	<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="tarefas-sim" name="tarefas" class="custom-control-input">
+					<label class="custom-control-label" for="tarefas-sim">Sim</label>
+				</div>
+				<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="tarefas-nao" name="tarefas" class="custom-control-input">
+					<label class="custom-control-label" for="tarefas-nao">Não</label>
+				</div>
+			</div>	
+		</div>
 		<button type="submit" class="btn btn-success btn-block"> Cadastrar</button>
 	</form>
 </div>

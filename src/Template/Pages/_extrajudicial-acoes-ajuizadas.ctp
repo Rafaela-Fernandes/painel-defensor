@@ -49,6 +49,19 @@
 				</select>
 			</div>
 		</div>
+		<div class="form-row">
+		   	<div class="form-group col-md-12 mt-2">
+				 <span> Em substituição</span>
+				 	<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="acoes-ajuizadas-sim" name="acoesAjuizadas-extraJudicial" class="custom-control-input">
+					<label class="custom-control-label" for="acoes-ajuizadas-sim">Sim</label>
+				</div>
+				<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="acoes-ajuizadas-nao" name="acoesAjuizadas-extraJudicial" class="custom-control-input">
+					<label class="custom-control-label" for="acoes-ajuizadas-nao">Não</label>
+				</div>
+			</div>	
+		</div>
 			<button type="submit" class="btn btn-success btn-block mt-3"> Cadastrar</button>
 	</form>
 

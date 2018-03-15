@@ -1,7 +1,7 @@
 <nav id="nav-menu">
 
 	<div class="item">
-		<input type="radio"  name="radio" id="check1">
+		<input type="radio"  name="radio-menu" id="check1">
 		<label for="check1" id="check1">Agendamento</label>
 		<ul class="list-unstyled">
 			<li><a href="">Item 01</a></li>
@@ -10,7 +10,7 @@
 
 	</div>
 	<div class="item">
-	 <input type="radio"  name="radio" id="check2">
+	 <input type="radio"  name="radio-menu" id="check2">
 		<label for="check2">Triagem</label>
 		<ul class="list-unstyled t">
 			<li><a href="">Item 01</a></li>
@@ -18,7 +18,7 @@
 		</ul>
 	</div>
 	<div class="item">
-		<input type="radio"  name="radio" id="check3">
+		<input type="radio"  name="radio-menu" id="check3">
 		<label for="check3">Agendamento</label>
 		<ul class="list-unstyled ">
 			<li><a href="">Item 01</a></li>
@@ -27,7 +27,7 @@
 
 	</div>
 	<div class="item">
-		<input type="radio"  name="radio" id="check4">
+		<input type="radio"  name="radio-menu" id="check4">
 		<label for="check4">Consultas</label>
 		<ul class="list-unstyled ">
 			<li><a href="">Item 01</a></li>
@@ -44,7 +44,7 @@ $(document).ready(function () {
 	$('main').mousemove(function(){
     
           $('#sessao-menu').hide('slow');
-          $('input[type=radio]').prop('checked',false);
+          $('input[name=radio-menu]').prop('checked',false);
      });
 
 	$("#menu-suspenso").on('click', function() {
@@ -53,7 +53,7 @@ $(document).ready(function () {
      $("#sessao-menu").toggle('slow', function(){
       
         if($('#sessao-menu').is(':hidden')){
-          $('input[type=radio]').prop('checked',false);
+          $('input[name=radio-menu]').prop('checked',false);
         }
      }); 
      
