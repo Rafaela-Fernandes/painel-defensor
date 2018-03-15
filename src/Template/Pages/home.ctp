@@ -5,9 +5,6 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-   
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
      
 	<!-- jquery  -->
 	<script src="js/jquery.js"></script>
@@ -18,8 +15,6 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
-
-
 
 	<!-- css e js calendaio -->
 	<link rel="stylesheet" href="css/zabuto_calendar.min.css">
@@ -37,7 +32,7 @@
 	<script src="https://code.highcharts.com/modules/exporting.js"></script>
 
 
-	<title>Projeto-Pianel</title>
+	<title>Projeto-Painel-v2</title>
 </head>
 
 <body>

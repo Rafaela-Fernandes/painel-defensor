@@ -15,7 +15,12 @@
  	flex-grow: 0;
  }
 
-/* css das tabs da pagina principal*/
+.btn-personalizado{
+	border:solid #ced4da 1px;
+	background:#e9ecef;
+}
+
+/*-------- css das tabs da pagina principal-----------------*/
     .background-sessao {
  	background: #fff;
  	border: solid #dee2e6 1px;
@@ -25,7 +30,8 @@
 		color: #343a40;
 		text-align: center;
 		font-weight: 500;
-		width: 14.28%;
+		width: 12.5%;
+		
 	}
 	#nav-principal{
 		
@@ -34,6 +40,7 @@
 	#tabs-ancoras p {
 
 		margin-top: 5rem;
+		font-size:0.85rem !important;
 	}
 
 
@@ -116,6 +123,23 @@
 	}
 	#prazos-tarefas {
 		background-image: url("../img/prazos.png");
+		background-repeat: no-repeat;
+		background-position: 50% 25%
+	}
+
+/*-----------------------------------*/
+	#institucional.active,
+    #institucional:hover{
+		background-image: url("../img/institucional2.png");
+		background-repeat: no-repeat;
+		background-position: 50% 25%;
+		background-color: #343a40;
+		height: auto;
+		color: #fff;
+		border-radius: 0 0 0 0 !important;
+	}
+	#institucional{
+		background-image: url("../img/institucional.png");
 		background-repeat: no-repeat;
 		background-position: 50% 25%
 	}
@@ -206,10 +230,14 @@
  	color: white;
  }
 
- input {
+ input, select {
  	box-shadow: 0 0 0 0 !important;
  }
- #formulario-tarefas, #formulario-acoes-ajuizadas,#formulario-resolucao-extraJudicial {
+#formulario-institucional,#formulario-tarefas{
+	border: solid #cdd3d9 1px;
+}
+  #formulario-acoes-ajuizadas,#formulario-resolucao-extraJudicial,
+#formulario-cadastrar-audiencias,#formulario-atividade-processo,#formulario-processos{
  	display: none;
  	border: solid #cdd3d9 1px;
  }
@@ -311,6 +339,7 @@
  	font-weight: 400;
  	border: solid #17a2b8 1px;
  	border-radius: 7px 0px 0px 7px;
+
  }
  .contador-agendamento span:last-child {
  	color: #17a2b8;
@@ -318,7 +347,7 @@
  	font-weight: 500;
  	border: solid #17a2b8 1px;
  	border-radius: 0px 7px 7px 0px;
- }
+}
  
 /* css contadores inicial/retorno/todos */
  .contador-inicial button:first-child {
@@ -328,7 +357,8 @@
  	font-weight: 400;
  	border: solid #27ae60 1px;
  	border-radius: 7px 0px 0px 7px;
- 	cursor: pointer;
+ 	width: 66%;
+	cursor: pointer;
  }
  .contador-inicial span:last-child {
  	background: white;
@@ -337,6 +367,7 @@
  	font-weight: 400;
  	border: solid #27ae60 1px;
  	border-radius: 0px 7px 7px 0px;
+	width: 34%;
  }
  .contador-todos button:first-child {
  	background: #17a2b8;
@@ -345,7 +376,9 @@
  	font-weight: 400;
  	border: solid #17a2b8 1px;
  	border-radius: 7px 0px 0px 7px;
- 	cursor: pointer
+ 	width: 66%;
+	cursor: pointer;
+	
  }
  .contador-todos span:last-child {
  	background: white;
@@ -354,6 +387,7 @@
  	font-weight: 400;
  	border: solid #17a2b8 1px;
  	border-radius: 0px 7px 7px 0px;
+	 width: 34%;
  }
  .contador-retorno button:first-child {
  	background: #fd7e14;
@@ -362,7 +396,8 @@
  	font-weight: 400;
  	border: solid #fd7e14 1px;
  	border-radius: 7px 0px 0px 7px;
- 	cursor: pointer;
+    width: 66%;
+	cursor: pointer;
  }
  .contador-retorno span:last-child {
  	background: white;
@@ -371,6 +406,7 @@
  	font-weight: 400;
  	border: solid #fd7e14 1px;
  	border-radius: 0px 7px 7px 0px;
+	width: 34%;
  }
 
 

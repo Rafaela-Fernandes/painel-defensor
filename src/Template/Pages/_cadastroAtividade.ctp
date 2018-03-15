@@ -1,9 +1,9 @@
 <div class="col-md-6 py-4 px-5  mobile">
 
 
-	<h5 class="text-secondary">Cadastrar atividades referente a processos  <img src="/img/mais.png" alt="" id="exibir-form"> </h5>
+	<h5 class="text-secondary">Cadastrar atividades referente a processos  <img src="/img/mais.png" alt="" id="exibir-form-atividade-processos"> </h5>
 	<!-- Formulário Cadastrar tarefa -->
-	<form action="" method="" class="bg-light p-3 mb-3" id="formulario-tarefas">
+	<form action="" method="" class="bg-light p-3 mb-3" id="formulario-atividade-processo">
 		<div class="form-row">
 			<div class="form-group col-md-6">
 				<input name="titulo" type="text" class="form-control" placeholder="Nº Processo">
@@ -17,7 +17,7 @@
 				</select>
 			</div>
 		</div>
-		<div class="form-row d">
+		<div class="form-row">
 			<!-- text area oculto -->
 			<div class="form-group col-md-12">
 				<textarea class="form-control" rows="4" placeholder="Observação"></textarea>

@@ -2,13 +2,14 @@ $(document).ready(function () {
 	exibirNotificacoes();
 	exibirData();
 	voltarInicioPagina();
-	exibirFormTarefas();
+	exibirFormAtividadeProcessos();
 	exibirMenu();
 	exibirFormAcoesAjuizadas();
 	exibirFormResolucaoExtraJudicial();
 	exibeInput();
 	exibirMunicipios_exibirCampoOutros();
-
+    exibirFormAudiencias();
+	exibirFormProcessos();
 	
 
 
@@ -66,11 +67,23 @@ function voltarInicioPagina() {
 }
 
 
+function exibirFormAudiencias(){
+	$("#exibir-form-audiencias").on("click", function () {
+		$("#formulario-cadastrar-audiencias").toggle("fade");
 
+	});
 
-function exibirFormTarefas() {
-	$("#exibir-form").on("click", function () {
-		$("#formulario-tarefas").toggle("fade");
+}
+
+function exibirFormProcessos(){
+	$("#exibir-form-processos").on("click",function(){
+		$("#formulario-processos").toggle("fade");
+	})
+}
+
+function exibirFormAtividadeProcessos() {
+	$("#exibir-form-atividade-processos").on("click", function () {
+		$("#formulario-atividade-processo").toggle("fade");
 
 	});
 

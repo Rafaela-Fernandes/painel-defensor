@@ -2,35 +2,35 @@
 <div class="col-md-6 py-4 px-5 mobile">
 	
 	<div class="d-flex justify-content-between mt-4">
-		<div class="input-group contador-todos">
-			<button class="w-75 py-2" type="submit">Todos</button>
-			<span class="w-25 py-2">100</span>
+		<div class="input-group pr-3 contador-todos">
+			<button class=" py-2" type="submit" >Todos</button>
+			<span class="py-2">100</span>
 		</div>
-		<span class="text-white"> sepe</span>
-		<div class="input-group contador-inicial">
-		    <button class="w-75 py-2" type="submit">Inicial</button>
-			<span class="w-25 py-2">30</span>
+		<span class="text-white"></span>
+		<div class="input-group pr-3 contador-inicial">
+		    <button class="py-2" type="submit" >Inicial</button>
+			<span class="py-2">30</span>
 		</div>
-		<span class="text-white"> sepe</span>
+		<span class="text-white"> </span>
 		<div class="input-group contador-retorno">
-		    <button class="w-75 py-2" type="submit">Retorno</button>
-			<span class="w-25 py-2">70</span>
+		    <button class="py-2" type="submit" >Retorno</button>
+			<span class="py-2">70</span>
 		</div>
 	</div>
 
 	<form action="" class="mt-4">
 		<div class="input-group mt-3 ">
-			<input type="text" class="form-control data" placeholder="Data Inicial">
-			<input type="text" class="form-control data" placeholder="Data Final">
+			<input type="text"  class="form-control data" placeholder="Data Inicial">
+			<input type="text"  class="form-control data" placeholder="Data Final">
 			<div class="input-group-append">
-				<button class="btn text-secondary" type="button" style="border:solid #ced4da 1px; background:#e9ecef">Pesquisar</button>
+				<button class="btn text-secondary btn-personalizado" type="button" s>Pesquisar</button>
 			</div>
 		</div>
 
 		<div class="input-group mt-3">
-			<input type="text" class="form-control" placeholder=" " aria-label="Recipient's username" aria-describedby="basic-addon2">
+			<input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
 			<div class="input-group-append">
-				<button class="btn text-secondary" type="submit" style="border:solid #ced4da 1px; background:#e9ecef">Pesquisar</button>
+				<button class="btn text-secondary btn-personalizado" type="submit">Pesquisar</button>
 			</div>
 		</div>
 	</form>
@@ -46,6 +46,7 @@
 				<th scope="col">Assistido</th>
 				<th scope="col">Tipo Ação</th>
 				<th scope="col">Opções</th>
+				<th scope="col" class="d-none">Status</th>
 			</tr>
 		</thead>
 		<tbody class="font-td text-center">
@@ -58,6 +59,7 @@
 					<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
 
 				</td>
+			    <td class="d-none"><span class="badge badge-pill  bg-dark w-100 py-1">Inicial</span></td>
 			</tr>
 			<tr>
 				<td>18/01/2018</td>
@@ -66,28 +68,21 @@
 				<td>ALIMENTOS</td>
 				<td>
 					<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
-				</td>
-			</tr>
-			<tr>
-				<td>18/01/2018</td>
-				<td>09:50</td>
-				<td>PEDRO DA SILVA FERNANDES</td>
-				<td>ALIMENTOS</td>
-				<td>
-					<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
-				</td>
-			</tr>
-			<tr>
-				<td>18/01/2018</td>
-				<td>09:50</td>
-				<td>PEDRO DA SILVA FERNANDES</td>
-				<td>ALIMENTOS</td>
-				<td>
-					<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
-				</td>
-			</tr>
 
+				</td>
+			    <td class="d-none"><span class="badge badge-pill  bg-dark w-100 py-1">Inicial</span></td>
+			</tr>
+			<tr>
+				<td>18/01/2018</td>
+				<td>09:50</td>
+				<td>PEDRO DA SILVA FERNANDES</td>
+				<td>ALIMENTOS</td>
+				<td>
+					<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
 
+				</td>
+			    <td class="d-none"><span class="badge badge-pill  bg-dark w-100 py-1">Inicial</span></td>
+			</tr>
 		</tbody>
 	</table>
 

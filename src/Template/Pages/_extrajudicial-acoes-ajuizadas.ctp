@@ -1,13 +1,13 @@
 <div class="col-md-6 py-4 px-5  mobile">
 
 
-	<h5 class="text-secondary">Ações ajuizadas <img src="img/mais.png" alt="" id="exibir-form-acoes-ajuizadas"> </h5>
-	<!-- Formulário Cadastrar tarefa -->
-	<form action="" method="" class="bg-light p-3 mb-3" id="formulario-acoes-ajuizadas">
+	<h5 class="text-secondary">Ações ajuizadas <img src="../img/mais.png" alt="" id="exibir-form-acoes-ajuizadas"> </h5>
+	
+	<form class="bg-light p-3 mb-3" id="formulario-acoes-ajuizadas">
 		 <div class="form-row">
 			<div class="input-group mb-3 col-md-12">
 				<div class="input-group-prepend">
-					<span class="input-group-text text-secondary" placeholder="">Nome</span>
+					<span class="input-group-text text-secondary">Nome Assistido</span>
 				</div>
 				<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 			</div>
@@ -15,7 +15,7 @@
 		 <div class="form-row">
 			<div class="input-group mb-3 col-md-12">
 				<div class="input-group-prepend">
-					<span class="input-group-text text-secondary" placeholder="">Nº Processo</span>
+					<span class="input-group-text text-secondary">Nº Processo</span>
 				</div>
 				<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 			</div>
@@ -25,7 +25,7 @@
 		<div class="form-row">
 			<div class="input-group col-md-12">
 			    <div class="input-group-prepend">
-				<label class="input-group-text text-secondary" for="inputGroupSelect01">Tipo Ação</label>
+				<label class="input-group-text text-secondary" for="">Tipo Ação</label>
 			    </div>
 				<select class="custom-select">
 					<option value=""></option>
@@ -61,7 +61,7 @@
 	</div>
 
 	<table class="table table-responsive-md  table-hover mt-4 tabela-responsiva">
-		<thead class="bg-secondary text-white" style="font-size:">
+		<thead class="bg-secondary text-white">
 			<tr>
 				<th scope="col">Nome</th>
 				<th scope="col">Nº Processo</th>
