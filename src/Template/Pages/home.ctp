@@ -32,7 +32,7 @@
 	<script src="https://code.highcharts.com/modules/exporting.js"></script>
 
 
-	<title>Projeto-Painel-v2</title>
+	<title>Projeto-Painel</title>
 </head>
 
 <body>

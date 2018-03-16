@@ -123,6 +123,7 @@
 			<tr>
 				<th scope="col">Nome</th>
 				<th scope="col">Nº Processos</th>
+				<th scope="col">Vara</th>
 				<th scope="col">Opções</th>
 			</tr>
 		</thead>
@@ -130,6 +131,7 @@
 			<tr>
 				<td>FLAVIA BARRETO GOMES DIAS</td>
 				<td>000100065656568</td>
+				<td>1ª VARA ABCDE</td>
 				<td>
 					<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
 				</td>
@@ -137,6 +139,7 @@
 			<tr>
 				<td>FLAVIA BARRETO GOMES DIAS</td>
 				<td>000100065656568</td>
+				<td>1ª VARA ABCDE</td>
 				<td>
 					<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
 				</td>
@@ -144,6 +147,7 @@
 			<tr>
 				<td>FLAVIA BARRETO GOMES DIAS</td>
 				<td>000100065656568</td>
+				<td>1ª VARA ABCDE</td>
 				<td>
 					<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
 				</td>
@@ -151,6 +155,7 @@
 			<tr>
 				<td>FLAVIA BARRETO GOMES DIAS</td>
 				<td>000100065656568</td>
+				<td>1ª VARA ABCDE</td>
 				<td>
 					<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
 				</td>

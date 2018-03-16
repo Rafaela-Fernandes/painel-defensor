@@ -26,16 +26,30 @@
 			</div>
 		</div>
 		<div class="form-row">
-			<div class="input-group mb-3 col-md-12">
+			<div class="input-group col-md-12">
 				<div class="input-group-prepend">
-					<span class="input-group-text text-secondary">local</span>
+					<label class="input-group-text text-secondary" for="">Tipo</label>
 				</div>
-				<input type="" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+				<select class="custom-select">
+				    <option value="9" selected ></option>
+					<option value="9">ADMONITÓRIA</option>
+					<option value="13">AUDIÊNCIAS CONCENTRADAS</option>
+					<option value="1">CONCILIAÇÕES</option>
+					<option value="11">EXTRAJUDICIAL</option>
+					<option value="5">INSTRUÇÃO</option>
+					<option value="6">INSTRUÇÃO E JULGAMENTO</option>
+					<option value="12">JUDICIAL</option>
+					<option value="7">JUSTIFICAÇÃO</option>
+					<option value="10">MEDIAÇÃO</option>
+					<option value="8">OUTRAS</option>
+					<option value="3">PRELIMINAR</option>
+					<option value="2">SESSÕES</option>
+				</select>
 			</div>
 		</div>
 
 		<div class="form-row">
-			<div class="form-group col-md-12">
+			<div class="form-group col-md-12 mt-2">
 				<span> Em substituição</span>
 				<div class="custom-control custom-radio custom-control-inline">
 					<input type="radio" id="substituicao-sim" name="substituicao-audiencias" class="custom-control-input">
@@ -47,9 +61,7 @@
 				</div>
 			</div>
 		</div>
-
 		<button type="submit" class="btn btn-success btn-block mt-2"> Cadastrar</button>
-
 	</form>
 
 	<div class="mt-4 input-group contador-agendamento">
