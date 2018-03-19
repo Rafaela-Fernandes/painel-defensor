@@ -1,16 +1,22 @@
 <div class="col-md-6 py-4 px-5  mobile">
 
 
-	<h5 class="text-secondary">Cadastrar atividades referente a processos  <img src="/img/mais.png" alt="" id="exibir-form-atividade-processos"> </h5>
+	<h5 class="text-secondary">Cadastrar atividades referente a processos <img src="/img/mais.png" alt="" id="exibir-form-atividade-processos"> </h5>
 	<!-- Formulário Cadastrar tarefa -->
 	<form action="" method="" class="bg-light p-3 mb-3" id="formulario-atividade-processo">
 		<div class="form-row">
-			<div class="form-group col-md-6">
-				<input name="titulo" type="text" class="form-control .mask-processo" placeholder="Nº Processo">
+			<div class="input-group mb-3 col-md-12">
+				<div class="input-group-prepend">
+					<span class="input-group-text text-secondary" placeholder="">Nª Processos</span>
+				</div>
+				<input name="titulo" type="text" class="form-control mask-processo" placeholder="">
 			</div>
-			<div class="form-group col-md-6">
-				<select id="" class="form-control">
-					<option selected> Atvidades</option>
+			<div class="input-group mb-3 col-md-12">
+				<div class="input-group-prepend">
+					<label class="input-group-text text-secondary" for="">Tipo Resolução</label>
+				</div>
+				<select id="" class="custom-select">
+					<option selected></option>
 					<option>Participação em Audiências</option>
 					<option>Réplica</option>
 					<option>Contestação</option>

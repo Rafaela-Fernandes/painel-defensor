@@ -20,6 +20,17 @@
 	background:#e9ecef;
 }
 
+.form-radio{
+	margin-bottom: 0.3rem;
+	color:#656b72;
+}
+
+hr{
+margin-bottom: 0.5rem;
+
+}
+
+
 /*-------- css das tabs da pagina principal-----------------*/
     .background-sessao {
  	background: #fff;

@@ -1,7 +1,7 @@
 <!-- Inicio informações do dia audiências-->
 <div class="col-md-6 py-4 px-5 mobile">
 
-	<h5 class="text-secondary">Cadastrar Audiências <img src="../img/mais.png" alt="" id="exibir-form-audiencias"> </h5>
+	<h5 class="text-secondary">Cadastrar audiências <img src="../img/mais.png" alt="" id="exibir-form-audiencias"> </h5>
 	<form class="bg-light p-3 mb-3" id="formulario-cadastrar-audiencias">
 		<div class="form-row">
 			<div class="input-group mb-3 col-md-12">
@@ -47,9 +47,9 @@
 				</select>
 			</div>
 		</div>
-
+		<hr>
 		<div class="form-row">
-			<div class="form-group col-md-12 mt-2">
+			<div class="form-group col-md-12 mt-2 form-radio">
 				<span> Em substituição</span>
 				<div class="custom-control custom-radio custom-control-inline">
 					<input type="radio" id="substituicao-sim" name="substituicao-audiencias" class="custom-control-input">
@@ -61,7 +61,8 @@
 				</div>
 			</div>
 		</div>
-		<button type="submit" class="btn btn-success btn-block mt-2"> Cadastrar</button>
+		<hr>
+		<button type="submit" class="btn btn-success btn-block mt-3"> Cadastrar</button>
 	</form>
 
 	<div class="mt-4 input-group contador-agendamento">

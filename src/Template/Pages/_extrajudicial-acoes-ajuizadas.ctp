@@ -23,7 +23,7 @@
 		
 
 		<div class="form-row">
-			<div class="input-group col-md-12">
+			<div class="input-group mb-3 col-md-12">
 			    <div class="input-group-prepend">
 				<label class="input-group-text text-secondary" for="">Tipo Ação</label>
 			    </div>
@@ -49,8 +49,9 @@
 				</select>
 			</div>
 		</div>
+		<hr>
 		<div class="form-row">
-		   	<div class="form-group col-md-12 mt-2">
+		   	<div class="form-group col-md-12 mt-2 form-radio">
 				 <span> Em substituição</span>
 				 	<div class="custom-control custom-radio custom-control-inline">
 					<input type="radio" id="acoes-ajuizadas-sim" name="acoesAjuizadas-extraJudicial" class="custom-control-input">
@@ -62,6 +63,7 @@
 				</div>
 			</div>	
 		</div>
+		<hr>
 			<button type="submit" class="btn btn-success btn-block mt-3"> Cadastrar</button>
 	</form>
 
