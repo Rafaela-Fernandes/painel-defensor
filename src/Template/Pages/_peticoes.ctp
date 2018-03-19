@@ -60,21 +60,29 @@
 	<form action="" method="" class="bg-light p-4 mb-3 mt-4" style="border: solid #cdd3d9 1px;">
 
 		<div class="form-row">
-			<div class="input-group mb-3">
+			<div class="input-group mb-3 col-md-12">
 				<div class="input-group-prepend">
 					<span class="input-group-text" placeholder="">Nome do Arquivo</span>
 				</div>
-				<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+				<input type="text" class="form-control" aria-label="Default fileinput" aria-describedby="inputGroup-sizing-default">
 			</div>
-			<div class="input-group mb-3">
-				<div class="input-group-prepend">
+			<div class="input-group mb-3 col-md-12">
+				<!--<div class="input-group-prepend">
 					<span class="input-group-text" placeholder="">Inserir Arquivo</span>
-				</div>
+				</div> -->
 				<input type="file" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 			</div>
 			<button type="submit" class="btn btn-success w-100"> Enviar</button>
 		</div>
 	</form>
 	
+   
+  
 
 </div>
+
+
+
+
+
+

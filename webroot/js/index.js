@@ -7,10 +7,47 @@ $(document).ready(function () {
 	exibirMunicipios_exibirCampoOutros();
 	exibicaoInputs();
 	exibirMenuLateral();
-	 mascarasInputs();
+	mascarasInputs();
+	contadoresAbaAgendamento();
+	contadoresModalAgendamento()
+	
 });
 
+function contadoresModalAgendamento(){
+	  $('#todos-modal').click(function(){
+		  $('.retorno-modal').show('fade');
+		  $('.inicial-modal').show('fade');
+	 });
+	 
+	  $('#inicial-modal').click(function(){
+		 $('.retorno-modal').hide('fade');
+		  $('.inicial').show('fade');
+	 });
+	 
+	   $('#retorno-modal').click(function(){
+		 $('.retorno-modal').show('fade');
+		  $('.inicial-modal').hide('fade');
+	 });
+}
 
+function contadoresAbaAgendamento(){
+	   $('#todos').click(function(){
+		  $('.retorno').show('fade');
+		  $('.inicial').show('fade');
+	 });
+	 
+	  $('#inicial').click(function(){
+		 $('.retorno').hide('fade');
+		  $('.inicial').show('fade');
+	 });
+	 
+	   $('#retorno').click(function(){
+		 $('.retorno').show('fade');
+		  $('.inicial').hide('fade');
+	 });
+	 
+	 
+}
 function mascarasInputs(){
 	
 	 $('.mask-processo').inputmask({
