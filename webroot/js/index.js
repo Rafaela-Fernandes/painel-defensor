@@ -2,31 +2,65 @@ $(document).ready(function () {
 	exibirNotificacoes();
 	exibirData();
 	voltarInicioPagina();
-	exibirFormTarefas();
 	exibirMenu();
-	exibirFormAcoesAjuizadas();
-	exibirFormResolucaoExtraJudicial();
 	exibeInput();
 	exibirMunicipios_exibirCampoOutros();
-
-	
-
-
+	exibicaoInputs();
+	exibirMenuLateral();
+	 mascarasInputs();
 });
 
 
+function mascarasInputs(){
+	
+	 $('.mask-processo').inputmask({
+         mask: '9999999-99.9999.999.9999'
+    });
+
+    $('.data').inputmask({
+        mask: '99/99/9999'
+    });
+}
 
 
+function exibirMenuLateral(){
 
+	$('main').mousemove(function () {
+
+		$('#sessao-menu').hide('slow');
+		$('input[name=radio-menu]').prop('checked', false);
+	});
+
+	$("#menu-suspenso").on('click', function () {
+
+
+		$("#sessao-menu").toggle('slow', function () {
+
+			if ($('#sessao-menu').is(':hidden')) {
+				$('input[name=radio-menu]').prop('checked', false);
+			}
+		});
+
+	});
+
+}
 
 function exibirNotificacoes() {
+
+
+	$('main').mousemove(function () {
+
+		$('#notificacoes').hide('slow');
+		$('#nome-usuario').show('fade');
+
+	});
+
 	$("#icone-notificacao").on('click', function () {
 
 		$("#notificacoes").toggle('fade');
 		$("#nome-usuario").toggle();
 
 	});
-
 
 }
 
@@ -59,38 +93,41 @@ function voltarInicioPagina() {
 		$('html, body').animate({
 			scrollTop: 0
 		}, 300);
-		
-		    $('.tabela-esconder').hide('slow');
+
+		$('.tabela-esconder').hide('slow');
 	});
 
 }
 
 
+function exibicaoInputs() {
 
-
-function exibirFormTarefas() {
-	$("#exibir-form").on("click", function () {
-		$("#formulario-tarefas").toggle("fade");
+	$("#exibir-form-audiencias").on("click", function () {
+		$("#formulario-cadastrar-audiencias").toggle("fade");
 
 	});
 
-}
+	$("#exibir-form-processos").on("click", function () {
+		$("#formulario-processos").toggle("fade");
+	});
 
-function exibirFormAcoesAjuizadas() {
+
+	$("#exibir-form-atividade-processos").on("click", function () {
+		$("#formulario-atividade-processo").toggle("fade");
+
+	});
+
 	$("#exibir-form-acoes-ajuizadas").on("click", function () {
 		$("#formulario-acoes-ajuizadas").toggle("fade");
 
 	});
 
-}
-
-function exibirFormResolucaoExtraJudicial() {
 	$("#exibir-form-resolucao-extraJudicial").on("click", function () {
 		$("#formulario-resolucao-extraJudicial").toggle("fade");
 
 	});
-
 }
+
 
 
 function exibirMenu() {
@@ -111,59 +148,64 @@ function exibirMenu() {
 
 function exibeInput() {
 	$('#tipo-resolucao-extra-judicial').change(function () {
-		if ($('[value=orgaos-publicos]').is('option:selected')) {	
+		if ($('[value=orgaos-publicos]').is('option:selected')) {
 			$('#tipo-orgao').show("slow");
-		} else {	
+		} else {
 			$('#tipo-orgao').hide("slow");
+			$('#lista-municipio').hide("slow");
+			$('#outro-orgao').hide("slow");
+
 		}
-		
+
 		if ($('[value=empresa]').is('option:selected')) {
 			$('#tipo-empresa').show("slow");
 		} else {
-			
+
 			$('#tipo-empresa').hide("slow");
+			$('#outros-empresa').hide("slow");
 		}
-		
-		
-				
+
+
+
 	});
 
-	$('#tipo-resolucao-extra-judicial').change(function(){	 
-	       
-	   if($('[value=orgaos-publicos]').is('option:selected') || $('[value=empresa]').is('option:selected')){
-			 
-			  $('#forma-contato').show("slow");
-		 } else{
-			 
-			  $('#forma-contato').hide("slow");
-		 }
-   });
-			
+	$('#tipo-resolucao-extra-judicial').change(function () {
+
+		if ($('[value=orgaos-publicos]').is('option:selected') || $('[value=empresa]').is('option:selected')) {
+
+			$('#forma-contato').show("slow");
+		} else {
+
+			$('#forma-contato').hide("slow");
+
+		}
+	});
+
 }
 
 
-function exibirMunicipios_exibirCampoOutros(){
-	$('#tipo-orgao').change(function(){
-		if($('[value=municipio]').is('option:selected')){
-			 $('#lista-municipio').show("slow");
-		}else{
+function exibirMunicipios_exibirCampoOutros() {
+	$('#tipo-orgao').change(function () {
+		if ($('[value=municipio]').is('option:selected')) {
+			$('#lista-municipio').show("slow");
+		} else {
 			$('#lista-municipio').hide("slow");
 		}
-		
-		
-		if($('[value=outros-orgao]').is('option:selected')){
-			 $('#outro-orgao').show("slow");
-		}else{
+
+
+		if ($('[value=outros-orgao]').is('option:selected')) {
+			$('#outro-orgao').show("slow");
+		} else {
 			$('#outro-orgao').hide("slow");
 		}
 	});
-	
-	
-	$('#tipo-empresa').change(function(){
-		
-		if($('[value=outro-empresa]').is('option:selected')){
-			 $('#outros-empresa').show("slow");
-		}else{
+
+
+	$('#tipo-empresa').change(function () {
+
+		if ($('[value=outro-empresa]').is('option:selected')) {
+			$('#outros-empresa').show("slow");
+		} else {
 			$('#outros-empresa').hide("slow");
 		}
 	})

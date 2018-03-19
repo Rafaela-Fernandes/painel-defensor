@@ -1,13 +1,13 @@
 <div class="col-md-6 py-4 px-5  mobile">
 
 
-	<h5 class="text-secondary">Ações ajuizadas <img src="img/mais.png" alt="" id="exibir-form-acoes-ajuizadas"> </h5>
-	<!-- Formulário Cadastrar tarefa -->
-	<form action="" method="" class="bg-light p-3 mb-3" id="formulario-acoes-ajuizadas">
+	<h5 class="text-secondary">Ações ajuizadas <img src="../img/mais.png" alt="" id="exibir-form-acoes-ajuizadas"> </h5>
+	
+	<form class="bg-light p-3 mb-3" id="formulario-acoes-ajuizadas">
 		 <div class="form-row">
 			<div class="input-group mb-3 col-md-12">
 				<div class="input-group-prepend">
-					<span class="input-group-text text-secondary" placeholder="">Nome</span>
+					<span class="input-group-text text-secondary">Nome Assistido</span>
 				</div>
 				<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 			</div>
@@ -15,17 +15,17 @@
 		 <div class="form-row">
 			<div class="input-group mb-3 col-md-12">
 				<div class="input-group-prepend">
-					<span class="input-group-text text-secondary" placeholder="">Nº Processo</span>
+					<span class="input-group-text text-secondary">Nº Processo</span>
 				</div>
-				<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+				<input type="text" class="form-control mask-processo" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 			</div>
 		</div>
 		
 
 		<div class="form-row">
-			<div class="input-group col-md-12">
+			<div class="input-group mb-3 col-md-12">
 			    <div class="input-group-prepend">
-				<label class="input-group-text text-secondary" for="inputGroupSelect01">Tipo Ação</label>
+				<label class="input-group-text text-secondary" for="">Tipo Ação</label>
 			    </div>
 				<select class="custom-select">
 					<option value=""></option>
@@ -49,6 +49,21 @@
 				</select>
 			</div>
 		</div>
+		<hr>
+		<div class="form-row">
+		   	<div class="form-group col-md-12 mt-2 form-radio">
+				 <span> Em substituição</span>
+				 	<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="acoes-ajuizadas-sim" name="acoesAjuizadas-extraJudicial" class="custom-control-input">
+					<label class="custom-control-label" for="acoes-ajuizadas-sim">Sim</label>
+				</div>
+				<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="acoes-ajuizadas-nao" name="acoesAjuizadas-extraJudicial" class="custom-control-input">
+					<label class="custom-control-label" for="acoes-ajuizadas-nao">Não</label>
+				</div>
+			</div>	
+		</div>
+		<hr>
 			<button type="submit" class="btn btn-success btn-block mt-3"> Cadastrar</button>
 	</form>
 
@@ -61,7 +76,7 @@
 	</div>
 
 	<table class="table table-responsive-md  table-hover mt-4 tabela-responsiva">
-		<thead class="bg-secondary text-white" style="font-size:">
+		<thead class="bg-secondary text-white">
 			<tr>
 				<th scope="col">Nome</th>
 				<th scope="col">Nº Processo</th>
@@ -93,3 +108,7 @@
 		</tbody>
 	</table>
 </div>
+
+
+
+

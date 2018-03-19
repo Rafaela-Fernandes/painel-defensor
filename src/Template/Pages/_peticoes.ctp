@@ -56,7 +56,7 @@
 
 
 <div class="col-md-6 py-4 px-5  mobile">
-	<h5 class="text-secondary"> Uploader de arquivos </h5>
+	<h5 class="text-secondary"> Enviar de arquivos </h5>
 	<form action="" method="" class="bg-light p-4 mb-3 mt-4" style="border: solid #cdd3d9 1px;">
 
 		<div class="form-row">
@@ -75,4 +75,6 @@
 			<button type="submit" class="btn btn-success w-100"> Enviar</button>
 		</div>
 	</form>
+	
+
 </div>
