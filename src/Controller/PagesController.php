@@ -56,6 +56,8 @@ class PagesController extends AppController
         if (!empty($path[1])) {
             $subpage = $path[1];
         }
+
+        $this->agendamentos();
         $this->set(compact('page', 'subpage'));
 
         try {
@@ -66,5 +68,15 @@ class PagesController extends AppController
             }
             throw new NotFoundException();
         }
+    }
+
+    public function agendamentos()
+    {
+        $this->loadModel('Agendamentos');
+        #TODO enviar funcionario_id do defensor logado
+        $today = date("d/m/Y");
+        $agendamentos = $this->Agendamentos->find('byDefensor', ['funcionario_id' => 375]);
+        
+        $this->set(compact('today', 'agendamentos'));
     }
 }
