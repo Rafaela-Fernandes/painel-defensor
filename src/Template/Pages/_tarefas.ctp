@@ -1,3 +1,57 @@
+
+<div class="col-md-6 py-4 px-5  mobile">
+	<h5 class="text-secondary"> Cadastrar tarefas</h5>
+	<form action="" method="" class="bg-light p-4 mb-3 mt-4" id="formulario-tarefas">
+
+		<div class="form-row">
+			<div class="input-group mb-3 col-md-12">
+				<div class="input-group-prepend">
+					<span class="input-group-text text-secondary" placeholder="">Prazo</span>
+				</div>
+				<input type="text" class="form-control data" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+			</div>
+		</div>
+		<div class="form-row ">
+
+			<div class="form-group col-md-12">
+				<textarea class="form-control" rows="4" placeholder="Descrição"></textarea>
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-12">
+				<div class="input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text text-secondary">Lembrete</span>
+					</div>
+					<input type="number" class="form-control"> 
+					<select class="custom-select" id="inputGroupSelect01">
+						<option selected disabled>Selecione uma unidade
+							<option value="1">Hora</option>
+							<option value="2">Dia</option>
+							<option value="3">Semana</option>
+
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="form-row">
+		   	<div class="form-group col-md-12 mt-2">
+				 <span> Em substituição</span>
+				 	<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="tarefas-sim" name="tarefas" class="custom-control-input">
+					<label class="custom-control-label" for="tarefas-sim">Sim</label>
+				</div>
+				<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio" id="tarefas-nao" name="tarefas" class="custom-control-input">
+					<label class="custom-control-label" for="tarefas-nao">Não</label>
+				</div>
+			</div>	
+		</div>
+		<button type="submit" class="btn btn-success btn-block"> Cadastrar</button>
+	</form>
+</div>
+
+
 <div class="col-md-6 py-4 px-5  mobile">
 	<h5 class="text-secondary"> Lista de tarefas</h5>
 	<div class="mt-4 input-group contador-agendamento">
@@ -51,46 +105,4 @@
 			</tr>
 		</tbody>
 	</table>
-</div>
-
-
-
-
-<div class="col-md-6 py-4 px-5  mobile">
-	<h5 class="text-secondary"> Cadastrar tarefas</h5>
-	<form action="" method="" class="bg-light p-4 mb-3 mt-4" style="border: solid #cdd3d9 1px;">
-
-		<div class="form-row">
-			<div class="input-group mb-3">
-				<div class="input-group-prepend">
-					<span class="input-group-text text-secondary" placeholder="">Prazo</span>
-				</div>
-				<input type="text" class="form-control data" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-			</div>
-		</div>
-		<div class="form-row ">
-
-			<div class="form-group col-md-12">
-				<textarea class="form-control" rows="4" placeholder="Descrição"></textarea>
-			</div>
-		</div>
-		<div class="form-row">
-			<div class="form-group col-md-12">
-				<div class="input-group">
-					<div class="input-group-prepend">
-						<span class="input-group-text text-secondary">Lembrete</span>
-					</div>
-					<input type="number" class="form-control"> 
-					<select class="custom-select" id="inputGroupSelect01">
-						<option selected disabled>Selecione uma unidade
-							<option value="1">Hora</option>
-							<option value="2">Dia</option>
-							<option value="3">Semana</option>
-
-					</select>
-				</div>
-			</div>
-		</div>
-		<button type="submit" class="btn btn-success btn-block"> Cadastrar</button>
-	</form>
 </div>
