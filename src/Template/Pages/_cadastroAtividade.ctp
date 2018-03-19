@@ -6,7 +6,7 @@
 	<form action="" method="" class="bg-light p-3 mb-3" id="formulario-atividade-processo">
 		<div class="form-row">
 			<div class="form-group col-md-6">
-				<input name="titulo" type="text" class="form-control" placeholder="Nº Processo">
+				<input name="titulo" type="text" class="form-control .mask-processo" placeholder="Nº Processo">
 			</div>
 			<div class="form-group col-md-6">
 				<select id="" class="form-control">

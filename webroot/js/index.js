@@ -7,10 +7,20 @@ $(document).ready(function () {
 	exibirMunicipios_exibirCampoOutros();
 	exibicaoInputs();
 	exibirMenuLateral();
+	 mascarasInputs();
 });
 
 
+function mascarasInputs(){
+	
+	 $('.mask-processo').inputmask({
+         mask: '9999999-99.9999.999.9999'
+    });
 
+    $('.data').inputmask({
+        mask: '99/99/9999'
+    });
+}
 
 
 function exibirMenuLateral(){
