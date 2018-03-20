@@ -8,11 +8,16 @@ $(document).ready(function () {
 	exibicaoInputs();
 	exibirMenuLateral();
 	mascarasInputs();
-	contadoresAbaAgendamento();
-	contadoresModalAgendamento()
+	contadoresAbaAgendamento();   /* só para desmostraçao visual, será apagado*/
+	contadoresModalAgendamento(); /* só para desmostraçao visual, será apagado*/
+    exibirTabelaGrafico();
 	
 });
 
+
+
+
+/* só para desmostraçao visual, será apagado*/
 function contadoresModalAgendamento(){
 	  $('#todos-modal').click(function(){
 		  $('.retorno-modal').show('fade');
@@ -30,6 +35,7 @@ function contadoresModalAgendamento(){
 	 });
 }
 
+/* só para desmostraçao visual, será apagado*/
 function contadoresAbaAgendamento(){
 	   $('#todos').click(function(){
 		  $('.retorno').show('fade');
@@ -47,6 +53,26 @@ function contadoresAbaAgendamento(){
 	 });
 	 
 	 
+}
+
+
+
+function exibirTabelaGrafico(){
+	  $(document).ready(function(){
+	 
+	  	$(".scroll-tabela").click(function (event) {
+		 event.preventDefault();
+			
+			 $('.tabela-esconder').toggle('slow');
+			 $('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);        
+	});
+
+  });
+	
+ $('.tabela-esconder').dblclick(function() {
+    $('.tabela-esconder').hide('slow');
+});
+	
 }
 function mascarasInputs(){
 	

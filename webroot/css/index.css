@@ -272,15 +272,26 @@ margin-bottom: 0.5rem;
  	cursor: pointer;
  }
 
- .span-atendimento {
- 	cursor: pointer;
- }
-
+.bordas-radio:before{
+	border:solid #afafaf 1px;
+}
  
+.tabela-esconder{
+	display: none;
+}
+ 
+#texto-exibitTabela{
+position: absolute; 
+top:7%; 
+right:6%; 
+z-index:3;
+cursor:pointer	
+}
+
 
 /*--------------css para mobile--------------------------------*/
  
- @media screen and (max-width: 768px) {
+ @media screen and (max-width: 770px) {
  	.mobile {
  		padding: 20px 15px !important;
  	}
@@ -310,36 +321,36 @@ margin-bottom: 0.5rem;
  	h5 {
  		font-size: 1rem;
  	}
- 	.tab-mobile div a {
- 		padding: .5rem 0.2rem;
- 	}
- 	#content-modal {
+ 
+	 .modal-calendario, .modal-audiencias, .modal-extrajudicial{
  		width: 100%;
  	}
- 	.tabela-responsiva {
- 		display: block;
- 		width: 100%;
- 		overflow-x: auto;
- 		-ms-overflow-style: -ms-autohiding-scrollbar;
- 	}
- 	.span-data {
- 		margin-left: 13rem;
- 	}
-	 
+ 	
+	 #tabs-ancoras p{
+		 display: none;
+	 }
 	 #tabs-ancoras a {
-	width: 100%;
-		 
-	
-}
+	  width: 22%;
+	  height: 75px;
+	  background-size: 3rem;
+	  background-position: 50% 50% !important;
+		
+  }
 
 	 #sessao-menu{
 		 width: 100% !important;
 		 min-height: auto !important;;
 	 }
 	 
-	 	
+	 .span-status span{
+		 padding: 0.2rem 0.3rem !important;
 	
-
+	 }	
+	
+	 #texto-exibitTabela{
+		 top:2%; 
+         right:6%; 
+	 }
  }
 
 /* css dos caontadores geral*/
@@ -484,7 +495,7 @@ select option{
 		color: #404952 ;
 	}
 
-/* css contadores inicial/retorno/todos */
+/* css contadores inicial/retorno/todos */ /* só para simulação será apagado,*/
 
 	[type="radio"] {
 		display: none;
@@ -583,7 +594,7 @@ select option{
 
 
 
-/*--------------------------------------------------------*/
+/*--------------------------------------------------------*/ /* só para simulação será apagado,*/
 	
 	.contador-retorno label {
 		background: linear-gradient(#fd8a2a,#d3701e);
@@ -628,6 +639,7 @@ select option{
 		border-right: solid #d9721a  1px;
 	}
 
+/*--------------------------------------------------------*/
 
 	.contador-todos-modal label {
 		background: linear-gradient(#20b9d1, #0d8ca0);

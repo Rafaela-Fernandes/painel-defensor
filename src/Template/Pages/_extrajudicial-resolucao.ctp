@@ -122,22 +122,22 @@
 				 <span> Houve êxito na tentativa de resoluçao extrajudicial</span>
 				 	<div class="custom-control custom-radio custom-control-inline">
 					<input type="radio" id="resolucao-sim" name="resolucao-extraJudicial" class="custom-control-input">
-					<label class="custom-control-label" for="resolucao-sim">Sim</label>
+					<label class="custom-control-label  bordas-radio" for="resolucao-sim">Sim</label>
 				</div>
 				<div class="custom-control custom-radio custom-control-inline">
 					<input type="radio" id="resolucao-nao" name="resolucao-extraJudicial" class="custom-control-input">
-					<label class="custom-control-label" for="resolucao-nao">Não</label>
+					<label class="custom-control-label  bordas-radio" for="resolucao-nao">Não</label>
 				</div>
 			</div>
 			<div class="form-group col-md-12 form-radio">
 				<span> Em substituição</span>
 				<div class="custom-control custom-radio custom-control-inline">
 					<input type="radio" id="substituicao-resolucao-sim" name="substituicao-resolucao" class="custom-control-input">
-					<label class="custom-control-label" for="substituicao-resolucao-sim">Sim</label>
+					<label class="custom-control-label  bordas-radio" for="substituicao-resolucao-sim">Sim</label>
 				</div>
 				<div class="custom-control custom-radio custom-control-inline">
 					<input type="radio" id="substituicao-resolucao-nao" name="substituicao-resolucao" class="custom-control-input">
-					<label class="custom-control-label" for="substituicao-resolucao-nao">Não</label>
+					<label class="custom-control-label  bordas-radio" for="substituicao-resolucao-nao">Não</label>
 				</div>
 			</div>
 			
@@ -150,11 +150,11 @@
 	<!-- Formulário Cadastrar tarefa -->
 
 	<div class="mt-3 input-group contador-agendamento">
-		<span class="w-50 py-2">Resolução Extra Judicial</span>
-		<span class="w-50 py-2"> 4</span>
+		<span class="w-75 py-2">Resolução Extra Judicial</span>
+		<span class="w-25 py-2"> 4</span>
 	</div>
 
-	<table class="table table-responsive-md  table-hover mt-4 tabela-responsiva">
+	<table class="table table-responsive-md  table-hover mt-4 ">
 		<thead class="bg-secondary text-white" style="font-size:">
 			<tr>
 				<th scope="col">Nome</th>

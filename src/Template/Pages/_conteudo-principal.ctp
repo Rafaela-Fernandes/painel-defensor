@@ -71,8 +71,8 @@
      <!-- ------------ CONTEUDO PROCESSOS/ CADASTRAR ATIVIDADE PROCESSOS -------------- -->
 	<div class="tab-pane fade" role="tabpanel" aria-labelledby="nav-tab" id="sessao-processos">
 		<section class="row  mt-5 background-sessao">
-			<?= $this->element('../Pages/_processos')?>
-				<?= $this->element('../Pages/_cadastroAtividade')?>
+			    <?= $this->element('../Pages/_processos')?>
+				<?= $this->element('../Pages/_cadastroAtividadeProcessos')?>
 		</section>
 	</div>
 	

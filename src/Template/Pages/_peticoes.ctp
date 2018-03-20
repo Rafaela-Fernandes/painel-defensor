@@ -1,8 +1,8 @@
 <div class="col-md-6  py-4 px-5 mobile">
 	<h5 class="text-secondary">Meus modelos de petições</h5>
 	<div class="mt-4 input-group contador-agendamento">
-		<span class="w-50 py-2">Total Petições</span>
-		<span class="w-50 py-2">40</span>
+		<span class="w-75 py-2">Total Petições</span>
+		<span class="w-25 py-2">40</span>
 	</div>
 	
 	<form action="">

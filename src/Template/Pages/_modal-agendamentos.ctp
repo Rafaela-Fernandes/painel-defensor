@@ -52,64 +52,64 @@
 
 
 				<table class="table table-responsive-md table-hover mt-4">
-		<thead class="bg-secondary text-white">
-			<tr>
-				<th scope="col">Data</th>
-				<th scope="col">Hora</th>
-				<th scope="col">Assistido</th>
-				<th scope="col">Ação</th>
-				<th scope="col">Opções</th>
-				<th scope="col">Status</th>
-			</tr>
-		</thead>
-		<tbody class="font-td text-center">
-			<tr class="retorno-modal">
-				<td>18/01/2018</td>
-				<td>09:50</td>
-				<td>PEDRO DA SILVA FERNANDES</td>
-				<td>ALIMENTOS</td>
-				<td>
-					<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
+					<thead class="bg-secondary text-white">
+						<tr>
+							<th scope="col">Data</th>
+							<th scope="col">Hora</th>
+							<th scope="col">Assistido</th>
+							<th scope="col">Ação</th>
+							<th scope="col">Opções</th>
+							<th scope="col">Status</th>
+						</tr>
+					</thead>
+					<tbody class="font-td text-center">
+						<tr class="retorno-modal">
+							<td>18/01/2018</td>
+							<td>09:50</td>
+							<td>PEDRO DA SILVA FERNANDES</td>
+							<td>ALIMENTOS</td>
+							<td>
+								<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
 
-				</td>
-				<td><span class="badge badge-pill  text-white w-100 py-2" style="background:#fd8a2a; font-size:0.7rem">Retorno</span></td>
-			</tr>
-			<tr class="retorno-modal">
-				<td>18/01/2018</td>
-				<td>09:50</td>
-				<td>PEDRO DA SILVA FERNANDES</td>
-				<td>ALIMENTOS</td>
-				<td>
-					<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
+							</td>
+							<td><span class="badge badge-pill  text-white w-100 py-2" style="background:#fd8a2a; font-size:0.7rem">Retorno</span></td>
+						</tr>
+						<tr class="retorno-modal">
+							<td>18/01/2018</td>
+							<td>09:50</td>
+							<td>PEDRO DA SILVA FERNANDES</td>
+							<td>ALIMENTOS</td>
+							<td>
+								<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
 
-				</td>
-				<td><span class="badge badge-pill  text-white w-100 py-2" style="background:#fd8a2a;font-size:0.7rem">Retorno</span></td>
-			</tr>
-			<tr class="inicial-modal">
-				<td>18/01/2018</td>
-				<td>09:50</td>
-				<td>PEDRO DA SILVA FERNANDES</td>
-				<td>ALIMENTOS</td>
-				<td>
-					<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
+							</td>
+							<td><span class="badge badge-pill  text-white w-100 py-2" style="background:#fd8a2a;font-size:0.7rem">Retorno</span></td>
+						</tr>
+						<tr class="inicial-modal">
+							<td>18/01/2018</td>
+							<td>09:50</td>
+							<td>PEDRO DA SILVA FERNANDES</td>
+							<td>ALIMENTOS</td>
+							<td>
+								<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
 
-				</td>
-				<td><span class="badge badge-pill text-white w-100 py-2" style="background:#27ae60;font-size:0.7rem">Inicial</span></td>
-			</tr>
-			
-			<tr class="inicial-modal">
-				<td>18/01/2018</td>
-				<td>09:50</td>
-				<td>PEDRO DA SILVA FERNANDES</td>
-				<td>ALIMENTOS</td>
-				<td>
-					<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
+							</td>
+							<td><span class="badge badge-pill text-white w-100 py-2" style="background:#27ae60;font-size:0.7rem">Inicial</span></td>
+						</tr>
 
-				</td>
-				<td><span class="badge text-white badge-pill w-100 py-2"style="background:#27ae60;font-size:0.7rem">Inicial</span></td>
-			</tr>
-		</tbody>
-	</table>
+						<tr class="inicial-modal">
+							<td>18/01/2018</td>
+							<td>09:50</td>
+							<td>PEDRO DA SILVA FERNANDES</td>
+							<td>ALIMENTOS</td>
+							<td>
+								<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
+
+							</td>
+							<td><span class="badge text-white badge-pill w-100 py-2" style="background:#27ae60;font-size:0.7rem">Inicial</span></td>
+						</tr>
+					</tbody>
+				</table>
 
 
 			</div>
@@ -120,23 +120,3 @@
 		</div>
 	</div>
 </div>
-
-
-
-<script>
- $(document).ready(function(){
-	 
-	 
-	 
-	 
-	
- });
-
-</script>
-
-<style>
-	/* css contadores Modal inicial/retorno/todos */
-
-	
-</style>
-<!-- Fim modal agendamento -->

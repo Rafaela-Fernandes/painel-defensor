@@ -1,7 +1,7 @@
 <!-- Inicio informações do dia audiências-->
 <div class="col-md-6 py-4 px-5 mobile">
 
-	<h5 class="text-secondary">Cadastrar audiências <img src="../img/mais.png" alt="" id="exibir-form-audiencias"> </h5>
+	<h5 class="text-secondary">Cadastrar audiências <img src="img/mais.png" alt="" id="exibir-form-audiencias"> </h5>
 	<form class="bg-light p-3 mb-3" id="formulario-cadastrar-audiencias">
 		<div class="form-row">
 			<div class="input-group mb-3 col-md-12">
@@ -53,11 +53,11 @@
 				<span> Em substituição</span>
 				<div class="custom-control custom-radio custom-control-inline">
 					<input type="radio" id="substituicao-sim" name="substituicao-audiencias" class="custom-control-input">
-					<label class="custom-control-label" for="substituicao-sim">Sim</label>
+					<label class="custom-control-label  bordas-radio" for="substituicao-sim">Sim</label>
 				</div>
 				<div class="custom-control custom-radio custom-control-inline">
 					<input type="radio" id="substituicao-nao" name="substituicao-audiencias" class="custom-control-input">
-					<label class="custom-control-label" for="substituicao-nao">Não</label>
+					<label class="custom-control-label  bordas-radio" for="substituicao-nao">Não</label>
 				</div>
 			</div>
 		</div>
@@ -66,8 +66,8 @@
 	</form>
 
 	<div class="mt-4 input-group contador-agendamento">
-		<span class="w-50 py-2">Total Audiências</span>
-		<span class="w-50 py-2">100</span>
+		<span class="w-75 py-2">Total Audiências</span>
+		<span class="w-25 py-2">100</span>
 	</div>
 
 	<form action="" class="mt-4">
@@ -89,7 +89,7 @@
 
 
 
-	<table class="table table-re table-hover mt-4">
+	<table class="table  table-hover mt-4">
 		<thead class="bg-secondary text-white">
 			<tr>
 				<th scope="col">Data</th>

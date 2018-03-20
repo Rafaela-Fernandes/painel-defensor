@@ -12,8 +12,8 @@
 			</div>
 			<div class="modal-body p-4">
 				<div class="mt-4 input-group contador-agendamento">
-					<span class="w-50 py-2">Total Audiências</span>
-					<span class="w-50 py-2">100</span>
+					<span class="w-75 py-2">Total Audiências</span>
+					<span class="w-25 py-2">100</span>
 				</div>
 
 				<form action="" class="mt-4">

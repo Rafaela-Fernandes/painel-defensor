@@ -4,15 +4,8 @@
 	</div>
 	<div class="col-md-9">
 					
-			<nav class="row justify-content-end navbar navbar-expand-lg ">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu " aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon" id="botao-menu"></span>
-				</button>
-
-
-				<div class="collapse navbar-collapse " id="menu">
-
-					<ul class="navbar-nav " id="nav-personalizada">
+			<nav class="justify-content-end navbar navbar-expand-lg ">
+					<ul class="navbar-nav d-flex flex-row" id="nav-personalizada">
 						<li class="nav-item dropdown dropdown-personalizado " id="bordas-dropdown">
 							<a class="nav-link " href="#" data-toggle="dropdown"  id="configuracao"><img src="img/configuracao.png" alt="" ></a>
 							<ul class="dropdown-menu text-center bg-dark">
@@ -34,12 +27,12 @@
 						</li>
 
 					</ul>
-				</div>
 			</nav>
 			
 
 	</div>
 </div>
-				
+
+
 
 		

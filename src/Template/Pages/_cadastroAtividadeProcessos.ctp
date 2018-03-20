@@ -1,7 +1,7 @@
 <div class="col-md-6 py-4 px-5  mobile">
 
 
-	<h5 class="text-secondary">Cadastrar atividades referente a processos <img src="/img/mais.png" alt="" id="exibir-form-atividade-processos"> </h5>
+	<h5 class="text-secondary">Cadastrar atividades de processos <img src="/img/mais.png" alt="" id="exibir-form-atividade-processos"> </h5>
 	<!-- Formulário Cadastrar tarefa -->
 	<form action="" method="" class="bg-light p-3 mb-3" id="formulario-atividade-processo">
 		<div class="form-row">
@@ -37,8 +37,8 @@
 	<!-- Formulário Cadastrar tarefa -->
 
 	<div class="mt-3 input-group contador-agendamento">
-		<span class="w-50 py-2">Atividade Cadastradas</span>
-		<span class="w-50 py-2"> 4</span>
+		<span class="w-75 py-2">Atividade Cadastradas</span>
+		<span class="w-25 py-2"> 4</span>
 	</div>
 	<form action="" method="" class="mt-4">
 
@@ -50,7 +50,7 @@
 		</div>
 
 	</form>
-	<table class="table table-responsive-md  table-hover mt-4 tabela-responsiva">
+	<table class="table table-responsive-md  table-hover mt-4 ">
 		<thead class="bg-secondary text-white" style="font-size:">
 			<tr>
 				<th scope="col">Processo</th>

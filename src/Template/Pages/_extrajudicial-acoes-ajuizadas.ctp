@@ -55,11 +55,11 @@
 				 <span> Em substituição</span>
 				 	<div class="custom-control custom-radio custom-control-inline">
 					<input type="radio" id="acoes-ajuizadas-sim" name="acoesAjuizadas-extraJudicial" class="custom-control-input">
-					<label class="custom-control-label" for="acoes-ajuizadas-sim">Sim</label>
+					<label class="custom-control-label  bordas-radio bordas-radio" for="acoes-ajuizadas-sim">Sim</label>
 				</div>
 				<div class="custom-control custom-radio custom-control-inline">
 					<input type="radio" id="acoes-ajuizadas-nao" name="acoesAjuizadas-extraJudicial" class="custom-control-input">
-					<label class="custom-control-label" for="acoes-ajuizadas-nao">Não</label>
+					<label class="custom-control-label  bordas-radio bordas-radio" for="acoes-ajuizadas-nao">Não</label>
 				</div>
 			</div>	
 		</div>
@@ -71,11 +71,11 @@
 	<!-- Formulário Cadastrar tarefa -->
 
 	<div class="mt-3 input-group contador-agendamento">
-		<span class="w-50 py-2">Ações ajuizadas</span>
-		<span class="w-50 py-2"> 4</span>
+		<span class="w-75 py-2">Ações ajuizadas</span>
+		<span class="w-25 py-2"> 4</span>
 	</div>
 
-	<table class="table table-responsive-md  table-hover mt-4 tabela-responsiva">
+	<table class="table table-responsive-md  table-hover mt-4 ">
 		<thead class="bg-secondary text-white">
 			<tr>
 				<th scope="col">Nome</th>

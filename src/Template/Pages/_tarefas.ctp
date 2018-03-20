@@ -34,20 +34,22 @@
 				</div>
 			</div>
 		</div>
+		<hr>
 		<div class="form-row">
-		   	<div class="form-group col-md-12 mt-2">
+		   	<div class="form-group col-md-12 mt-2 form-radio">
 				 <span> Em substituição</span>
 				 	<div class="custom-control custom-radio custom-control-inline">
 					<input type="radio" id="tarefas-sim" name="tarefas" class="custom-control-input">
-					<label class="custom-control-label" for="tarefas-sim">Sim</label>
+					<label class="custom-control-label  bordas-radio" for="tarefas-sim">Sim</label>
 				</div>
 				<div class="custom-control custom-radio custom-control-inline">
 					<input type="radio" id="tarefas-nao" name="tarefas" class="custom-control-input">
-					<label class="custom-control-label" for="tarefas-nao">Não</label>
+					<label class="custom-control-label  bordas-radio" for="tarefas-nao">Não</label>
 				</div>
 			</div>	
 		</div>
-		<button type="submit" class="btn btn-success btn-block"> Cadastrar</button>
+		<hr>
+		<button type="submit" class="btn btn-success btn-block mt-3"> Cadastrar</button>
 	</form>
 </div>
 
@@ -55,8 +57,8 @@
 <div class="col-md-6 py-4 px-5  mobile">
 	<h5 class="text-secondary"> Lista de tarefas</h5>
 	<div class="mt-4 input-group contador-agendamento">
-		<span class="w-50 py-2">Total Tarefas</span>
-		<span class="w-50 py-2">3</span>
+		<span class="w-75 py-2">Total Tarefas</span>
+		<span class="w-25 py-2">3</span>
 	</div>
 	<form action="" method="" class="mt-4">
 	<div class="input-group mt-3">
@@ -66,7 +68,7 @@
 			</div>
 		</div>
 	</form>
-	<table class="table table-responsive-md  table-hover tabela-responsiva mt-4">
+	<table class="table table-responsive-md  table-hover  mt-4">
 		<thead class="bg-secondary text-white" style="font-size:">
 			<tr>
 				<th scope="col">Prazo</th>

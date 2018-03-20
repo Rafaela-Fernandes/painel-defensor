@@ -52,7 +52,7 @@
 				<th scope="col">Status</th>
 			</tr>
 		</thead>
-		<tbody class="font-td text-center">
+		<tbody class="font-td text-center span-status">
 			<tr class="retorno">
 				<td>18/01/2018</td>
 				<td>09:50</td>

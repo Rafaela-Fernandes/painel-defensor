@@ -40,8 +40,8 @@
 <div class="col-md-6 py-4 px-5  mobile">
 	<h5 class="text-secondary"> Atividades institucionais</h5>
 	<div class="mt-4 input-group contador-agendamento">
-		<span class="w-50 py-2">Total Atividades</span>
-		<span class="w-50 py-2">3</span>
+		<span class="w-75 py-2">Total Atividades</span>
+		<span class="w-25 py-2">3</span>
 	</div>
 	<form action="" method="" class="mt-4">
 	<div class="input-group mt-3">
@@ -51,7 +51,7 @@
 			</div>
 		</div>
 	</form>
-	<table class="table table-responsive-md  table-hover tabela-responsiva mt-4">
+	<table class="table table-responsive-md  table-hover mt-4">
 		<thead class="bg-secondary text-white" style="font-size:">
 			<tr>
 				<th scope="col">Data</th>

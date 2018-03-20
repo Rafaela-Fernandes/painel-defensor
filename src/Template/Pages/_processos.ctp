@@ -37,7 +37,7 @@
 			</div>
 		</div>
 		<div class="form-row mt-3">
-			<div class="input-group col-md-6">
+			<div class="input-group col-md-6 mb-3">
 				<div class="input-group-prepend">
 					<label class="input-group-text text-secondary" for="">Comarca</label>
 				</div>
@@ -68,11 +68,11 @@
 				<span> Em substituição</span>
 				<div class="custom-control custom-radio custom-control-inline">
 					<input type="radio" id="processos-sim" name="processos" class="custom-control-input">
-					<label class="custom-control-label" for="processos-sim">Sim</label>
+					<label class="custom-control-label  bordas-radio" for="processos-sim">Sim</label>
 				</div>
 				<div class="custom-control custom-radio custom-control-inline">
 					<input type="radio" id="processos-nao" name="processos" class="custom-control-input">
-					<label class="custom-control-label" for="processos-nao">Não</label>
+					<label class="custom-control-label  bordas-radio" for="processos-nao">Não</label>
 				</div>
 			</div>
 		</div>
@@ -118,7 +118,7 @@
 
 	</form>
 
-	<table class="table table-responsive-md  table-hover mt-4 tabela-responsiva">
+	<table class="table table-responsive-md  table-hover mt-4 ">
 		<thead class="bg-secondary text-white" style="font-size:">
 			<tr>
 				<th scope="col">Nome</th>
