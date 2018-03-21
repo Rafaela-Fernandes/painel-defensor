@@ -351,6 +351,23 @@ cursor:pointer
 		 top:2%; 
          right:6%; 
 	 }
+	 
+	 #nav-personalizada{
+		padding-left: 1rem;
+		padding-top: 0.5rem;
+	  
+	 }
+	 
+	
+	 
+	 #nav-personalizada li+li{
+		 
+		 padding-left: 2.4rem;
+	 }
+	
+	 .esconder-ul {
+	display: none !important
+    }
  }
 
 /* css dos caontadores geral*/

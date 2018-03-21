@@ -2,7 +2,6 @@ $(document).ready(function () {
 	exibirNotificacoes();
 	exibirData();
 	voltarInicioPagina();
-	exibirMenu();
 	exibeInput();
 	exibirMunicipios_exibirCampoOutros();
 	exibicaoInputs();
@@ -57,6 +56,7 @@ function contadoresAbaAgendamento(){
 
 
 
+
 function exibirTabelaGrafico(){
 	  $(document).ready(function(){
 	 
@@ -95,10 +95,10 @@ function exibirMenuLateral(){
 	});
 
 	$("#menu-suspenso").on('click', function () {
-
-
+       
+        
 		$("#sessao-menu").toggle('slow', function () {
-
+             $('#nav-personalizada').toggleClass('esconder-ul');
 			if ($('#sessao-menu').is(':hidden')) {
 				$('input[name=radio-menu]').prop('checked', false);
 			}
@@ -192,20 +192,6 @@ function exibicaoInputs() {
 }
 
 
-
-function exibirMenu() {
-
-	$('#menu-suspenso').click(function () {
-
-		$('#menu-esquerdo').toggle('fade');
-	});
-
-	$("main").mouseover(function () {
-		$("#menu-esquerdo").hide();
-	});
-
-
-}
 
 
 
