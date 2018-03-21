@@ -288,6 +288,15 @@ z-index:3;
 cursor:pointer	
 }
 
+.inicial span, .inicial-modal span{
+	background:#27ae60;
+	font-size:0.7rem
+}
+.retorno span, .retorno-modal span{
+	background:#fd8a2a; 
+	font-size:0.7rem
+}
+
 
 /*--------------css para mobile--------------------------------*/
  
@@ -342,7 +351,7 @@ cursor:pointer
 		 min-height: auto !important;;
 	 }
 	 
-	 .span-status span{
+	 .span-status span, .inicial-modal span, .retorno-modal span{
 		 padding: 0.2rem 0.3rem !important;
 	
 	 }	

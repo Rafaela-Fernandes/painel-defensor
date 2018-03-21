@@ -72,7 +72,7 @@
 								<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
 
 							</td>
-							<td><span class="badge badge-pill  text-white w-100 py-2" style="background:#fd8a2a; font-size:0.7rem">Retorno</span></td>
+							<td><span class="badge badge-pill  text-white w-100 py-2">Retorno</span></td>
 						</tr>
 						<tr class="retorno-modal">
 							<td>18/01/2018</td>
@@ -83,7 +83,7 @@
 								<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
 
 							</td>
-							<td><span class="badge badge-pill  text-white w-100 py-2" style="background:#fd8a2a;font-size:0.7rem">Retorno</span></td>
+							<td><span class="badge badge-pill  text-white w-100 py-2" >Retorno</span></td>
 						</tr>
 						<tr class="inicial-modal">
 							<td>18/01/2018</td>
@@ -94,7 +94,7 @@
 								<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
 
 							</td>
-							<td><span class="badge badge-pill text-white w-100 py-2" style="background:#27ae60;font-size:0.7rem">Inicial</span></td>
+							<td><span class="badge badge-pill text-white w-100 py-2">Inicial</span></td>
 						</tr>
 
 						<tr class="inicial-modal">
@@ -106,7 +106,7 @@
 								<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
 
 							</td>
-							<td><span class="badge text-white badge-pill w-100 py-2" style="background:#27ae60;font-size:0.7rem">Inicial</span></td>
+							<td><span class="badge text-white badge-pill w-100 py-2">Inicial</span></td>
 						</tr>
 					</tbody>
 				</table>
