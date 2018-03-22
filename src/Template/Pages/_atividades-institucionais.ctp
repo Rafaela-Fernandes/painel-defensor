@@ -3,7 +3,17 @@
 	<form action="" method="" class="bg-light p-4 mb-3 mt-4" id="formulario-tarefas">
 
 		<div class="form-row">
-			<div class="input-group mb-3 col-md-12">
+		  <div class="input-group mb-3 col-md-6">
+				<div class="input-group-prepend">
+					<span class="input-group-text text-secondary">Área</span>
+				</div>
+			    <select class="custom-select" >
+					<option value="" selected></option>
+					<option value="">Penal</option>
+					<option value="">Não Penal</option>	
+				</select>
+			</div>
+			<div class="input-group mb-3 col-md-6">
 				<div class="input-group-prepend">
 					<span class="input-group-text text-secondary">Data</span>
 				</div>
