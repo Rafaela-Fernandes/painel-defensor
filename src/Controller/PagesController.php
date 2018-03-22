@@ -56,6 +56,15 @@ class PagesController extends AppController
         if (!empty($path[1])) {
             $subpage = $path[1];
         }
+
+        $funcionario_id = $this->request->session()->read('funcionario');
+        if(!$funcionario_id)
+        {
+            $funcionario_id = $this->request->query['funcionario'];
+            $this->request->session()->write('funcionario', $funcionario_id);
+        }
+
+        $this->agendamentos($funcionario_id);
         $this->set(compact('page', 'subpage'));
 
         try {
@@ -66,5 +75,18 @@ class PagesController extends AppController
             }
             throw new NotFoundException();
         }
+    }
+
+    public function agendamentos($funcionario_id)
+    {
+        $this->loadModel('Agendamentos');
+
+        $today = date("d/m/Y");
+        //1407 - Adelmo leal benevides
+        //1908 - Leda Conceicao Neves Dias
+        #TODO utiliza funcionario_id (estou utilizando id fixo para teste)
+        $agendamentos = $this->Agendamentos->find('byDefensor', ['funcionario_id' => 1407]);
+
+        $this->set(compact('today', 'agendamentos'));
     }
 }
