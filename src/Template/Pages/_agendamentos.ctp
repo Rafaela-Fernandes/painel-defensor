@@ -1,3 +1,4 @@
+<?php use Cake\I18n\Time; ?>
 <!-- Inicio informações do dia agendamentos -->
 <div class="col-md-6 py-4 px-5 mobile">
 	<div class="d-flex justify-content-between mt-4 contadores">
@@ -26,7 +27,7 @@
 			<input type="text" class="form-control data" value="<?= $today ?>" placeholder="Data Inicial">
 			<input type="text" class="form-control data" value="<?= $today ?>" placeholder="Data Final">
 			<div class="input-group-append">
-				<button class="btn text-secondary btn-personalizado" type="button" s>Pesquisar</button>
+				<button class="btn text-secondary btn-personalizado" type="button">Pesquisar</button>
 			</div>
 		</div>
 
@@ -52,40 +53,28 @@
 		</thead>
 		<tbody class="font-td text-center">
 			<tr>
-				<?php foreach($agendamentos as $agendamento): ?>
-					<?php d($agendamento); ?>
-					<!-- <td>18/01/2018</td>
-					<td>09:50</td>
-					<td>PEDRO DA SILVA FERNANDES</td>
-					<td>ALIMENTOS</td>
-					<td>
-						<!-- http://sigad.defensoria.ba.def.br/assistidos/extrato/524397 ->
-						<a href="http://sigad20/assistidos" target="_blank"> link Sigad</a>
+				<?php
+					foreach($agendamentos as $agendamento):
+						$class = 'inicial';
+						$spam = '<span class="badge badge-pill text-white w-100 py-2" style="background:#2dc76e; font-size:0.7rem">Inicial</span>';
 
-					</td> -->
+						if($agendamento['tipo_atendimento'])
+						{
+							$class = 'retorno';
+							$spam = '<span class="badge badge-pill text-white w-100 py-2" style="background:#fd8a2a; font-size:0.7rem">Retorno</span>';
+						}
+				?>
+					<tr class="<?= $class ?>">
+						<td><?= Time::parse($agendamento['data'])->i18nFormat('d/M/Y'); ?></td>
+						<td><?= $agendamento['hora'] ?></td>
+						<td><?= $agendamento['assistido'] ?></td>
+						<td><?= $agendamento['acao'] ?></td>
+						<td>
+							<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/<?= $agendamento['assistido_id'] ?>" target="_blank"> link Sigad</a>
+						</td>
+						<td><?= $spam ?></td>
+					</tr>
 				<?php endforeach; ?>
-			</tr>
-			<tr class="retorno">
-				<td>18/01/2018</td>
-				<td>09:50</td>
-				<td>PEDRO DA SILVA FERNANDES</td>
-				<td>ALIMENTOS</td>
-				<td>
-					<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
-
-				</td>
-				<td><span class="badge badge-pill  text-white w-100 py-2" style="background:#fd8a2a; font-size:0.7rem">Retorno</span></td>
-			</tr>
-			<tr class="inicial">
-				<td>18/01/2018</td>
-				<td>09:50</td>
-				<td>PEDRO DA SILVA FERNANDES</td>
-				<td>ALIMENTOS</td>
-				<td>
-					<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
-
-				</td>
-				<td><span class="badge badge-pill text-white w-100 py-2" style="background:#27ae60;font-size:0.7rem">Inicial</span></td>
 			</tr>
 		</tbody>
 	</table>

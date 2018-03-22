@@ -57,7 +57,14 @@ class PagesController extends AppController
             $subpage = $path[1];
         }
 
-        $this->agendamentos();
+        $funcionario_id = $this->request->session()->read('funcionario');
+        if(!$funcionario_id)
+        {
+            $funcionario_id = $this->request->query['funcionario'];
+            $this->request->session()->write('funcionario', $funcionario_id);
+        }
+
+        $this->agendamentos($funcionario_id);
         $this->set(compact('page', 'subpage'));
 
         try {
@@ -70,13 +77,16 @@ class PagesController extends AppController
         }
     }
 
-    public function agendamentos()
+    public function agendamentos($funcionario_id)
     {
         $this->loadModel('Agendamentos');
-        #TODO enviar funcionario_id do defensor logado
+
         $today = date("d/m/Y");
-        $agendamentos = $this->Agendamentos->find('byDefensor', ['funcionario_id' => 375]);
-        
+        //1407 - Adelmo leal benevides
+        //1908 - Leda Conceicao Neves Dias
+        #TODO utiliza funcionario_id (estou utilizando id fixo para teste)
+        $agendamentos = $this->Agendamentos->find('byDefensor', ['funcionario_id' => 1407]);
+
         $this->set(compact('today', 'agendamentos'));
     }
 }

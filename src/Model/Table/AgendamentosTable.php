@@ -179,9 +179,31 @@ class AgendamentosTable extends Table
     {
         return $query
             ->hydrate(false)
-            ->innerJoinWith('Agendas')
+            ->select([
+                'tipo_atendimento'=>'Agendamentos.tipo_atendimento',
+                'data' => 'Agendas.data',
+                'assistido' => 'p.nome',
+                'assistido_id' => 'Assistidos.id',
+                'acao' => 'TipoAcoes.nome',
+                'hora' => 'Horas.nome'
+            ])
             ->innerJoinWith('TipoAcoes')
             ->join([
+                'Agendas' => [
+                    'table' => 'agendas',
+                    'type' => 'INNER',
+                    'conditions' => 'Agendas.id = Agendamentos.agenda_id'
+                ],
+                'Escalas' => [
+                    'table' => 'escalas',
+                    'type' => 'INNER',
+                    'conditions' => 'Escalas.id = Agendas.escala_id'
+                ],
+                'Horas' => [
+                    'table' => 'horas',
+                    'type' => 'INNER',
+                    'conditions' => 'Horas.id = Escalas.hora_id'
+                ],
                 'Assistidos' => [
                     'table' => 'assistidos',
                     'type' => 'INNER',
@@ -194,8 +216,9 @@ class AgendamentosTable extends Table
                 ]
             ])
             ->where([
-                'Agendas.data' => 'CURDATE()',
+                'Agendas.data = CURDATE()',
                 'Agendamentos.funcionario_id' => $options['funcionario_id']
-            ]);
+            ])
+            ->order(['data', 'hora']);
     }
 }
