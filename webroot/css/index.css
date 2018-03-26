@@ -322,11 +322,7 @@ cursor:pointer
  		width: 20px;
  		height: 20px;
  	}
- 	.contadores li {
- 		margin-top: 2rem;
- 		display: block !important;
- 		,
- 	}
+ 
  	h5 {
  		font-size: 1rem;
  	}
@@ -362,21 +358,35 @@ cursor:pointer
 	 }
 	 
 	 #nav-personalizada{
-		padding-left: 1rem;
-		padding-top: 0.5rem;
-	  
+	    -ms-flex-pack: start !important;
+       justify-content: flex-start !important;
 	 }
 	 
 	
-	 
 	 #nav-personalizada li+li{
 		 
-		 padding-left: 2.4rem;
+		 margin-left:1rem;!important
+	 }
+	 #nav-personalizada li:hover{
+		 
+		 background:  !important;
+		 border-radius: 50px;
 	 }
 	
+	 .drop{
+		 position: absolute !important;
+	 }
+	 #nav-header{
+		 padding: 0 0;
+	 }
 	 .esconder-ul {
-	display: none !important
+	  display: none !important;
+	  transition: opacity 0.5s, padding 0.25s; 
     }
+	 .borda-div{
+		
+		 border-top: solid #404952 1px;
+	 }
  }
 
 /* css dos caontadores geral*/
@@ -401,21 +411,9 @@ cursor:pointer
 
 
  #nav-personalizada li:hover {
- 	background: #404952;
+ 	background:  #404952;
  	border-radius: 50px;
  }
-
-#div-menu:hover{
-	 	background: #404952;
- 
-	
-}
-#div-menu{
-	 padding-left: 0;
-}
-
-
-
  .dropdown-personalizado a {
  	color: white;
  	text-decoration: none;
@@ -425,10 +423,6 @@ cursor:pointer
  }
  #bordas-dropdown ul li:first-child {
  	border-bottom: solid #868e96 1px;
- }
- .dropdown-personalizado ul li:hover {
- 	background: #4a535c;
- 	border-radius: 0 !important;
  }
  .dropdown-personalizado ul {
  	padding: 0;
@@ -527,7 +521,8 @@ select option{
 		display: none;
 
 	}
-	.contadores label {
+
+.contadores label {
 		margin-bottom: 0;
 	}
 	.contador-todos label {
