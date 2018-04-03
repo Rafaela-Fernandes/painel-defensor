@@ -3,8 +3,8 @@
 
 	<h5 class="text-secondary">Resolução extrajudicial <img src="../img/mais.png" alt="" id="exibir-form-resolucao-extraJudicial"> </h5>
 	<!-- Formulário Cadastrar tarefa -->
+
 	<form class="bg-light p-3 mb-3" id="formulario-resolucao-extraJudicial">
-	    
 	     <div class="form-row">
 			<div class="input-group mb-3 col-md-12">
 				<div class="input-group-prepend">
@@ -23,12 +23,12 @@
 					<option value="">Conciliação</option>
 					<option value="">Mediação</option>
 					<option value="">Arbitragem</option>
-					<option value="orgaos-publicos">Contato com Órgãos Públicos</option> 	
-					<option value="empresa">Contato com Empresas</option>			
+					<option value="orgaos-publicos">Contato com Órgãos Públicos</option> 	<!-- Outro input  orgão item D-->
+					<option value="empresa">Contato com Empresas</option> <!-- Outro input Empresa item E -->
 				</select>
 			</div>
 		</div>
-	
+
 		<div class="form-row" id="tipo-orgao" style="display:none">
 			<div class="input-group mt-3 col-md-12">
 			    <div class="input-group-prepend">
@@ -48,16 +48,16 @@
 					<option value="outros-orgao">Outros</option>
 					<!-- Outro input -->
 				</select>
-			</div>		
+			</div>
 		</div> <!-- item D -->
-		
+
 			<div class="form-row" id="outro-orgao" style="display:none">
 			<div class="form-group col-md-12 mt-3">
 				<textarea class="form-control" rows="2" placeholder="Nome Órgão"></textarea>
 			</div>
-			</div>	
-	 
-		
+			</div>
+
+
 		<div class="form-row" id="lista-municipio" style="display:none">
 	        <div class="input-group mt-3 col-md-12">
 		      <div class="input-group-prepend">
@@ -71,9 +71,9 @@
 				</select>
 			</div>
 		</div>
-		
+
 		<div class="form-row" id="tipo-empresa" style="display:none">
-			<div class="input-group mt-3 col-md-12"> 
+			<div class="input-group mt-3 col-md-12">
 			  <div class="input-group-prepend">
 				<label class="input-group-text text-secondary" for="inputGroupSelect01">Empresa</label>
 			    </div>
@@ -97,8 +97,8 @@
 			<div class="form-group col-md-12 mt-3">
 				<textarea class="form-control" rows="2" placeholder="Nome Empresa"></textarea>
 			</div>
-			</div> 
-		
+			</div>
+
 		   <div class="form-row" id="forma-contato" style="display:none">
 		    <div class="input-group mt-3 col-md-12">
 		          <div class="input-group-prepend">
@@ -109,14 +109,15 @@
 					<option value="">E-mail</option>
 					<option value="">Telefone</option>
 					<option value="">Arbitragem</option>
-					<option value="">Encaminhamento</option> 	
+					<option value="">Encaminhamento</option>
 					<option value="">Ofício</option>
-					<opition value="">Reunião</opition>			
+					<opition value="">Reunião</opition>
 				</select>
-			</div>		
+			</div>
 		</div>
-		
+
 		 <hr>
+
 		<div class="form-row">
 		   	<div class="form-group col-md-12 form-radio">
 				 <span> Houve êxito na tentativa de resoluçao extrajudicial</span>
@@ -140,7 +141,7 @@
 					<label class="custom-control-label  bordas-radio" for="substituicao-resolucao-nao">Não</label>
 				</div>
 			</div>
-			
+
 		</div>
 		<hr>
 		<button type="submit" class="btn btn-success btn-block mt-3"> Cadastrar</button>
@@ -161,7 +162,7 @@
 				<th scope="col">Tipo</th>
 				<th scope="col">Resoluçao</th>
 				<th scope="col">Detalhes</th>
-				
+
 			</tr>
 		</thead>
 		<tbody class="font-td">
@@ -186,4 +187,7 @@
 		</tbody>
 	</table>
 </div>
+<<<<<<< HEAD
 </div>
+=======
+>>>>>>> a737083e316451d3b5e88a8285cf64be2dbc35d6
