@@ -43,7 +43,8 @@
 				</div>
 				<select class="custom-select">
 					<option value=""></option>
-				
+					<option value=""></option>
+					<option value=""></option>
 					<option value="">Manifestação acerca revogação total ou parcial da gratuidade</option>
 					<option value="">Condição suspensiva de exigibilidade para que o credor desmonstre a suficiância de recurso</option>
 					<option value="">Impugnação à concessão da justiça gratuita</option>
