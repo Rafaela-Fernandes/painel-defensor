@@ -74,8 +74,8 @@
 		<span class="w-75 py-2">Ações ajuizadas</span>
 		<span class="w-25 py-2"> 4</span>
 	</div>
-
-	<table class="table table-responsive-md  table-hover mt-4 ">
+   <div class="table-responsive">
+	<table class="table table-hover mt-4 ">
 		<thead class="bg-secondary text-white">
 			<tr>
 				<th scope="col">Nome</th>
@@ -107,6 +107,7 @@
 
 		</tbody>
 	</table>
+	</div>
 </div>
 
 

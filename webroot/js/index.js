@@ -74,6 +74,7 @@ function exibirTabelaGrafico(){
 });
 	
 }
+
 function mascarasInputs(){
 	
 	 $('.mask-processo').inputmask({
@@ -87,25 +88,18 @@ function mascarasInputs(){
 
 
 function exibirMenuLateral(){
+	
+	    $('main').on('click', function(){
+         $('#sessao-menu').hide('slow');
+      });
 
-	$('main').mousemove(function () {
 
-		$('#sessao-menu').hide('slow');
-		$('input[name=radio-menu]').prop('checked', false);
-	});
-
-	$("#menu-suspenso").on('click', function () {
-       
-        
-		$("#sessao-menu").toggle('slow', function () {
-             $('#nav-personalizada').toggleClass('esconder-ul');
-			if ($('#sessao-menu').is(':hidden')) {
-				$('input[name=radio-menu]').prop('checked', false);
-			}
-		});
-
-	});
-
+		$("#menu-suspenso").on('click', function () {  
+	           $("#sessao-menu").toggle('slow');
+			   
+	      });
+	
+	
 }
 
 function exibirNotificacoes() {
@@ -119,7 +113,7 @@ function exibirNotificacoes() {
 	});
 
 	$("#icone-notificacao").on('click', function () {
-
+        $('#sessao-menu').hide("fade");
 		$("#notificacoes").toggle('fade');
 		$("#nome-usuario").toggle();
 
@@ -189,6 +183,9 @@ function exibicaoInputs() {
 		$("#formulario-resolucao-extraJudicial").toggle("fade");
 
 	});
+	
+	
+	
 }
 
 

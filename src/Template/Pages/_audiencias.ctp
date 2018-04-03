@@ -88,7 +88,7 @@
 	</form>
 
 
-
+   <div class="table-responsive">
 	<table class="table  table-hover mt-4">
 		<thead class="bg-secondary text-white">
 			<tr>
@@ -127,6 +127,6 @@
 
 		</tbody>
 	</table>
-
+</div>
 </div>
 <!-- Fim Informações do dia audiências-->

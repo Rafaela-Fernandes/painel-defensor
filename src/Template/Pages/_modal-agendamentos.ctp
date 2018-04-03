@@ -50,8 +50,8 @@
 				</form>
 
 
-
-				<table class="table table-responsive-md table-hover mt-4">
+                 <div class="tatable-responsive">
+				<table class="table table-hover mt-4">
 					<thead class="bg-secondary text-white">
 						<tr>
 							<th scope="col">Data</th>
@@ -110,7 +110,7 @@
 						</tr>
 					</tbody>
 				</table>
-
+              </div>
 
 			</div>
 			<div class="modal-footer">

@@ -34,6 +34,41 @@
 				</div>
 			</div>
 		</div>
+	 
+	<h5 class="text-secondary mt-2"> Vincular processo </h5> 
+     <div class="form-row mt-3 ">
+			<div class="input-group col-md-12">
+				<div class="input-group-prepend">
+					<label class="input-group-text text-secondary" for="">Ato a ser praticado</label>
+				</div>
+				<select class="custom-select">
+					<option value=""></option>
+					<option value="">Manifestação acerca revogação total ou parcial da gratuidade</option>
+					<option value="">Condição suspensiva de exigibilidade para que o credor desmonstre a suficiância de recurso</option>
+					<option value="">Impugnação à concessão da justiça gratuita</option>
+					<option value="">recolhimento das custas após denegação ou revogação da gratuidade</option>
+					<option value="">AÇÃO DE ALIMENTOS GRAVÍDICOS</option>
+					<option value="">Exibição de procuração pelo advogado (prorrogável)</option>
+				</select>
+			</div>
+		</div>
+		
+		<div class="form-row mt-3 mb-4">
+			<div class="input-group  col-md-6">
+				<div class="input-group-prepend">
+					<span class="input-group-text text-secondary">Data 1ª prazo</span>
+				</div>
+				<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+			</div>
+			<div class="input-group  col-md-6">
+				<div class="input-group-prepend">
+					<span class="input-group-text text-secondary">Prazo Defensoria</span>
+				</div>
+				<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+			</div>	
+		</div>
+		
+		
 		<hr>
 		<div class="form-row">
 		   	<div class="form-group col-md-12 mt-2 form-radio">
@@ -49,7 +84,7 @@
 			</div>	
 		</div>
 		<hr>
-		<button type="submit" class="btn btn-success btn-block mt-3"> Cadastrar</button>
+	<button type="submit" class="btn btn-success btn-block mt-3"> Cadastrar</button>
 	</form>
 </div>
 
@@ -68,6 +103,7 @@
 			</div>
 		</div>
 	</form>
+	<div class="table-responsive">
 	<table class="table table-responsive-md  table-hover  mt-4">
 		<thead class="bg-secondary text-white" style="font-size:">
 			<tr>
@@ -107,4 +143,5 @@
 			</tr>
 		</tbody>
 	</table>
+	</div>
 </div>

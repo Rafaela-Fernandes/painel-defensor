@@ -81,12 +81,12 @@
 	</form>
 
 
-	<div class="d-flex justify-content-between mt-4">
-		<div class="input-group contador-agendamento">
+	<div class="d-flex justify-content-between mt-4 contador-processo">
+		<div class="input-group contador-agendamento pr-3">
 			<span class="w-75 py-2">Total Processos</span>
 			<span class="w-25 py-2">100</span>
 		</div>
-		<span class="text-white"> sepe</span>
+	
 		<div class="input-group contador-agendamento">
 			<span class="w-75 py-2">1º Vara Civel Salvador</span>
 			<span class="w-25 py-2">100</span>
@@ -117,8 +117,8 @@
 		</div>
 
 	</form>
-
-	<table class="table table-responsive-md  table-hover mt-4 ">
+    <div class="table-responsive">
+	<table class="table table-hover mt-4 ">
 		<thead class="bg-secondary text-white" style="font-size:">
 			<tr>
 				<th scope="col">Nome</th>
@@ -162,5 +162,5 @@
 			</tr>
 		</tbody>
 	</table>
-
+</div>
 </div>

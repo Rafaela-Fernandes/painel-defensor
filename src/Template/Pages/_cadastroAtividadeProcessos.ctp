@@ -1,7 +1,7 @@
 <div class="col-md-6 py-4 px-5  mobile">
 
 
-	<h5 class="text-secondary">Cadastrar atividades de processos <img src="/img/mais.png" alt="" id="exibir-form-atividade-processos"> </h5>
+	<h5 class="text-secondary">Cadastrar atividades referente a processos <img src="/img/mais.png" alt="" id="exibir-form-atividade-processos"> </h5>
 	<!-- Formulário Cadastrar tarefa -->
 	<form action="" method="" class="bg-light p-3 mb-3" id="formulario-atividade-processo">
 		<div class="form-row">
@@ -50,7 +50,8 @@
 		</div>
 
 	</form>
-	<table class="table table-responsive-md  table-hover mt-4 ">
+	<div class="table-responsive">
+	<table class="table table-hover mt-4 ">
 		<thead class="bg-secondary text-white" style="font-size:">
 			<tr>
 				<th scope="col">Processo</th>
@@ -74,7 +75,7 @@
 			<tr>
 				<td>00010008056565</td>
 				<td>Contestação</td>
-				<td>ir para contestação, nossa terei que ir para contestação, legal legal legal</td>
+				<td>ir para contestação, nossa terei que ir para contestação, legal legal legals</td>
 				<td>
 					<a href="#"><img src="" alt=""><img src="img/editar.png"></a>
 					<a href="#"><img src="" alt=""><img src="img/excluir.png"></a>
@@ -103,4 +104,5 @@
 			</tr>
 		</tbody>
 	</table>
+   </div>
 </div>

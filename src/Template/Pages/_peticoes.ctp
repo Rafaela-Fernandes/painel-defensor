@@ -14,7 +14,8 @@
 		</div>
 	</form>
 	
-	<table class="table table-responsive-md table-hover mt-4">
+	<div class="table-responsive">
+	<table class="table table-hover mt-4">
 		<thead class="bg-secondary text-white text-center">
 			<tr>
 				<th scope="col" colspan="4">Modelos</th>
@@ -52,6 +53,7 @@
 		</tbody>
 	</table>
 </div>
+</div>
 
 
 
@@ -76,9 +78,6 @@
 		</div>
 	</form>
 	
-   
-  
-
 </div>
 
 

@@ -153,7 +153,7 @@
 		<span class="w-75 py-2">Resolução Extra Judicial</span>
 		<span class="w-25 py-2"> 4</span>
 	</div>
-
+<div class="table-responsive">
 	<table class="table table-responsive-md  table-hover mt-4 ">
 		<thead class="bg-secondary text-white" style="font-size:">
 			<tr>
@@ -185,4 +185,5 @@
 			</tr>
 		</tbody>
 	</table>
+</div>
 </div>

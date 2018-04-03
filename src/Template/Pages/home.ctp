@@ -42,8 +42,6 @@
 
 <body>
 	<div class="container-fluid">
-
-		
 		<header>
 		 <?= $this->element('header') ?>
 		 	<section id="sessao-menu">
