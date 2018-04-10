@@ -54,11 +54,19 @@
 		</header>
 		
 			<main> 
-                 <?= $this->element('alertas');?> 
+                <!-- <?= $this->element('alertas');?> -->
 				
+               <section>
+               	   <?= $this->element('../Pages/_novoAtendimento-usuarioLogado')?>
+               </section>
+               
                 <section>
                  	<?= $this->element('../Pages/_conteudo-principal')?>
 				</section>
+				
+				
+				<!-- Modal novo atendimento -->
+				<?= $this->element('../Pages/_modal-novoAtendimento')?>
 				
 				<!-- Modais informações do dia-->
 				<?= $this->element('../Pages/_modal-audiencias')?>

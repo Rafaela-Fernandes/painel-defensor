@@ -23,8 +23,8 @@
 					<option value="">Conciliação</option>
 					<option value="">Mediação</option>
 					<option value="">Arbitragem</option>
-					<option value="orgaos-publicos">Contato com Órgãos Públicos</option> 	<!-- Outro input  orgão item D-->
-					<option value="empresa">Contato com Empresas</option> <!-- Outro input Empresa item E -->
+					<option value="orgaos-publicos">Contato com Órgãos Públicos</option> 	
+					
 				</select>
 			</div>
 		</div>
@@ -176,7 +176,7 @@
 				<td>Rafaeala da silva Fernandes</td>
 				<td>Contato com Empresa</td>
 				<td>Não</td>
-				<td><a href="" data-toggle="modal" data-target="#modal-empresa">Exibir</a></td>
+				<td><a href="#" data-toggle="modal" data-target="#modal-empresa">Exibir</a></td>
 			</tr>
 				<tr>
 				<td>Rafaeala da silva Fernandes</td>
@@ -187,7 +187,4 @@
 		</tbody>
 	</table>
 </div>
-<<<<<<< HEAD
-</div>
-=======
->>>>>>> a737083e316451d3b5e88a8285cf64be2dbc35d6
+

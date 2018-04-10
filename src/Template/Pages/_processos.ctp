@@ -3,7 +3,21 @@
 	<h5 class="text-secondary"> Lista de processos judiciais <img src="/img/mais.png" alt="" id="exibir-form-processos"></h5>
 
 	<form class="bg-light p-3 mb-3" id="formulario-processos">
-
+         
+		<div class="form-row">
+			<div class="form-group col-md-12 form-radio mt-2">
+				<span>Polo</span>
+				<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio"  name="polo" class="custom-control-input" id="polo-ativo">
+					<label class="custom-control-label  bordas-radio" for="polo-ativo">Ativo</label>
+				</div>
+				<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio"  name="polo" class="custom-control-input" id="polo-passivo">
+					<label class="custom-control-label  bordas-radio" for="polo-passivo">Passivo</label>
+				</div>
+			</div>
+		</div>
+		<hr>
 		<div class="form-row mt-3">
 			<div class="input-group  col-md-12">
 				<div class="input-group-prepend">
@@ -49,18 +63,19 @@
 
 				</select>
 			</div>
-			<div class="input-group col-md-6">
+				<div class="input-group col-md-6 mb-3">
 				<div class="input-group-prepend">
 					<label class="input-group-text text-secondary" for="">Vara</label>
 				</div>
 				<select class="custom-select">
 					<option value=""></option>
-					<option value="">AAAAAAA</option>
-					<option value="">BBBBBBB</option>
-					<option value="">CCCCCCC</option>
+					<option value="">AAAAAAAA</option>
+					<option value="">BBBBBBBB</option>
+					<option value="">CCCCCCCC</option>
 
 				</select>
 			</div>
+			
 		</div>
 		<hr>
 		<div class="form-row">

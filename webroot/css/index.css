@@ -25,6 +25,33 @@ hr {
 	margin-bottom: 0.5rem;
 }
 
+#menu-suspenso {
+	margin-left: 0.2rem;
+}
+
+
+#atendimento-img{
+	background-image: url(../img/novo-atendimento-2.png)!important;
+	background-repeat: no-repeat !important;
+	background-position: 4% 50%  !important;
+    padding: 0.9rem  !important;
+	border-radius: 50px  !important;
+	height: 56px !important;
+	margin-top: 2% !important;
+	background-size: 2.8rem !important;
+	border: solid #5a6167 1px;
+	}
+
+	#atendimento-img:hover{
+		transition: all 1s;						
+	}
+
+ #atendimento-img a{
+	text-decoration: none;
+	color:#FFF;
+	margin-left: 2.7rem;
+}
+
 
 /*-------- css das tabs da pagina principal-----------------*/
 
@@ -55,6 +82,7 @@ hr {
 	height: auto;
 	color: #fff;
 	border-radius: 0 0 0 0 !important;
+	
 }
 #agendamentos {
 	background-image: url("../img/agendamentos.png");
@@ -73,6 +101,7 @@ hr {
 	height: auto;
 	color: #fff;
 	border-radius: 0 0 0 0 !important;
+	
 }
 #extra-judicial {
 	background-image: url("../img/extra-judicial.png");
@@ -91,6 +120,7 @@ hr {
 	height: auto;
 	color: #fff;
 	border-radius: 0 0 0 0 !important;
+	
 }
 #audiencias {
 	background-image: url("../img/audiencias.png");
@@ -109,6 +139,7 @@ hr {
 	height: auto;
 	color: #fff;
 	border-radius: 0 0 0 0 !important;
+	
 }
 #processos {
 	background-image: url("../img/processos.png");
@@ -127,6 +158,7 @@ hr {
 	height: auto;
 	color: #fff;
 	border-radius: 0 0 0 0 !important;
+	
 }
 #prazos-tarefas {
 	background-image: url("../img/prazos.png");
@@ -145,6 +177,7 @@ hr {
 	height: auto;
 	color: #fff;
 	border-radius: 0 0 0 0 !important;
+
 }
 #institucional {
 	background-image: url("../img/institucional.png");
@@ -163,6 +196,7 @@ hr {
 	height: auto;
 	color: #fff;
 	border-radius: 0 0 0 0 !important;
+	
 }
 #peticoes {
 	background-image: url("../img/peticoes.png");
@@ -181,6 +215,7 @@ hr {
 	height: auto;
 	color: #fff;
 	border-radius: 0 0 0 0 !important;
+
 }
 #graficos {
 	background-image: url("../img/graficos.png");
@@ -258,6 +293,15 @@ select {
 	display:none;
 }
 
+#modal-novoAtendimento{
+	padding-right: 30rem !important;
+}
+.modal-atendimento{
+	width: 200%;
+	left: 0;
+	border-radius: 0.5rem;
+}
+
 .modal-calendario,
 .modal-extrajudicial {
 	width: 150%;
@@ -300,6 +344,7 @@ img {
 
 #nav-header div:first-child:hover{
 	background: #404952;
+	transition: all 1s;
 }
 
 .cabecalho {
@@ -389,7 +434,7 @@ img {
 		padding: 0 0.7rem;
 		justify-content: space-between !important;
 	}
-	#nav-personalizada li:hover {}
+
 }
 
 /* css dos caontadores geral*/
@@ -409,9 +454,17 @@ img {
 	border: solid #17a2b8 1px;
 	border-radius: 0px 7px 7px 0px;
 }
+
+.not:hover{
+	background-color: #343a40 !important;
+	border: 0 !important;
+}
+
 #nav-personalizada > li:hover {
-	background: #404952;
+	border: solid #66717c 1px;
 	border-radius: 50px;
+	background: #3e464e;
+	
 }
 .dropdown-personalizado a {
 	color: white;

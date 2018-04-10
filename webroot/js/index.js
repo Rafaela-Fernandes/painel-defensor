@@ -10,7 +10,7 @@ $(document).ready(function () {
 	contadoresAbaAgendamento();   /* só para desmostraçao visual, será apagado*/
 	contadoresModalAgendamento(); /* só para desmostraçao visual, será apagado*/
     exibirTabelaGrafico();
-	
+	inputNovoAtendimento();
 });
 
 
@@ -91,13 +91,27 @@ function exibirMenuLateral(){
 	
 	    $('main').on('click', function(){
          $('#sessao-menu').hide('slow');
+		 $('#nav-menu ul').hide();
       });
 
 
 		$("#menu-suspenso").on('click', function () {  
-	           $("#sessao-menu").toggle('slow');
+	           $("#sessao-menu").toggle('slow',function(){
+				    $('#nav-menu ul').hide();
+			   });
 			   
 	      });
+	
+	
+	$("#nav-menu p").click(function() {
+
+			$("#nav-menu ul").slideUp('1000');
+
+			if (!$(this).next().is(":visible")) {
+				$(this).next().slideDown('1000');
+				$("#nav-menu ul").addClass("");
+			}	
+    });
 	
 	
 }
@@ -189,10 +203,31 @@ function exibicaoInputs() {
 }
 
 
+function inputNovoAtendimento(){
+	
+	$('#form-pesquisar').submit(function(event){
+		
+		$('.exibir-form-tabela').show('slow');
+	});
+	
+	
+	 event.preventDefault();
+	$('#atendimento').change(function(){
+		
+		if($('[value=3]').is('option:selected')){
+			$('#tipo-especializada').show("slow");
+		}else{
+			$('#tipo-especializada').hide("slow");
+		}
+	});
+	
+}
 
 
 
 function exibeInput() {
+	
+	
 	$('#tipo-resolucao-extra-judicial').change(function () {
 		if ($('[value=orgaos-publicos]').is('option:selected')) {
 			$('#tipo-orgao').show("slow");

@@ -23,7 +23,7 @@
 		
 		<!-- ------------ TAREFAS/PRAZOS --------- -->
 		<a class="nav-item nav-link " data-toggle="tab" href="#sessao-tarefa" role="tab" aria-controls="nav" aria-selected="false" id="prazos-tarefas">
-			<p>TAREFAS/PRAZOS</p>
+			<p>TAREFAS</p>
 		</a>
 		
 		<!-- ------------ ATIVIDADES INSTITUCIONAIS --------- -->

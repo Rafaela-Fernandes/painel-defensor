@@ -39,14 +39,11 @@
 		</div>
 	</form>
 
-<<<<<<< HEAD
 
-    <div class="table-responsive">
-	<table class="table table-hover mt-4">
-=======
 	<!-- Listagem -->
-	<table class="table table-responsive-md table-hover mt-4">
->>>>>>> a737083e316451d3b5e88a8285cf64be2dbc35d6
+	<div class="table-responsive">
+	<table class="table table-hover mt-4">
+
 		<thead class="bg-secondary text-white">
 			<tr>
 				<th scope="col">Data</th>
@@ -58,7 +55,7 @@
 			</tr>
 		</thead>
 		<tbody class="font-td text-center">
-			<tr>
+			
 				<?php
 					foreach($agendamentos as $agendamento):
 						$class = 'inicial';
@@ -81,13 +78,10 @@
 						<td><?= $spam ?></td>
 					</tr>
 				<?php endforeach; ?>
-			</tr>
+		
 		</tbody>
 	</table>
-<<<<<<< HEAD
-    </div>
-=======
->>>>>>> a737083e316451d3b5e88a8285cf64be2dbc35d6
+</div>
 </div>
 <!-- Fim Informações do dia agendamentos -->
 

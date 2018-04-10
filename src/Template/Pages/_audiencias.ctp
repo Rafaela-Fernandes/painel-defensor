@@ -26,7 +26,7 @@
 			</div>
 		</div>
 		<div class="form-row">
-			<div class="input-group col-md-12">
+			<div class="input-group mb-3 col-md-12">
 				<div class="input-group-prepend">
 					<label class="input-group-text text-secondary" for="">Tipo</label>
 				</div>
@@ -44,6 +44,19 @@
 					<option value="8">OUTRAS</option>
 					<option value="3">PRELIMINAR</option>
 					<option value="2">SESSÕES</option>
+				</select>
+			</div>
+		</div>
+		
+		<div class="form-row">
+			<div class="input-group col-md-12 ">
+				<div class="input-group-prepend">
+					<label class="input-group-text text-secondary" for="">Resultado Audiência</label>
+				</div>
+				<select class="custom-select">
+				    <option value="9" selected ></option>
+					<option value="9">Provida</option>
+					<option value="9">Improvida</option>
 				</select>
 			</div>
 		</div>
@@ -96,6 +109,8 @@
 				<th scope="col">Hora</th>
 				<th scope="col">Local</th>
 				<th scope="col">Assistido</th>
+				<th scope="col">Resultado</th>
+				<th scope="col">Opções</th>
 			</tr>
 		</thead>
 		<tbody class="font-td">
@@ -105,24 +120,32 @@
 				<td>09:50</td>
 				<td>Forum AA</td>
 				<td>Celia Maria Dantas</td>
+				<td>Provida</td>
+				<td><a href="#"><img src="img/editar.png" alt=""></a></td>
 			</tr>
 			<tr>
 				<td>01/03/2018</td>
 				<td>09:50</td>
 				<td>Forum AA</td>
 				<td>Celia Maria Dantas</td>
+				<td>Improvida</td>
+				<td><a href="#"><img src="img/editar.png" alt=""></a></td>
 			</tr>
 			<tr>
 				<td>01/03/2018</td>
 				<td>09:50</td>
 				<td>Forum AA</td>
 				<td>Celia Maria Dantas</td>
+				<td>Provida</td>
+				<td><a href="#"><img src="img/editar.png" alt=""></a></td>
 			</tr>
 			<tr>
 				<td>01/03/2018</td>
 				<td>09:50</td>
 				<td>Forum AA</td>
 				<td>Celia Maria Dantas</td>
+				<td>Improvida</td>
+				<td><a href="#"><img src="img/editar.png" alt=""></a></td>
 			</tr>
 
 		</tbody>

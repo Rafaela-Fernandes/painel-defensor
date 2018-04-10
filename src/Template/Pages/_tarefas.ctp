@@ -21,7 +21,7 @@
 			<div class="form-group col-md-12">
 				<div class="input-group">
 					<div class="input-group-prepend">
-						<span class="input-group-text text-secondary">Lembrete</span>
+						<span class="input-group-text text-secondary">Lembrar em:</span>
 					</div>
 					<input type="number" class="form-control"> 
 					<select class="custom-select" id="inputGroupSelect01">
@@ -35,7 +35,8 @@
 			</div>
 		</div>
 	 
-	<h5 class="text-secondary mt-2"> Vincular processo </h5> 
+	 <hr>
+	<h5 class="text-secondary mt-3"> Vincular processo </h5> 
      <div class="form-row mt-3 ">
 			<div class="input-group col-md-12">
 				<div class="input-group-prepend">
