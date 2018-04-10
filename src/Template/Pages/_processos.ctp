@@ -71,7 +71,7 @@
 					<option value=""></option>
 					<option value="">AAAAAAAA</option>
 					<option value="">BBBBBBBB</option>
-					<option value="">CCCCCCCC</option>
+					<option value="">CCCCCCc</option>
 
 				</select>
 			</div>
