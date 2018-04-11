@@ -60,7 +60,7 @@ class PagesController extends AppController
         $funcionario_id = $this->request->session()->read('funcionario');
         if(!$funcionario_id)
         {
-            $funcionario_id = $this->request->query['funcionario'];
+            $funcionario_id = 2064;  //$this->request->query['funcionario'];
             $this->request->session()->write('funcionario', $funcionario_id);
         }
 
