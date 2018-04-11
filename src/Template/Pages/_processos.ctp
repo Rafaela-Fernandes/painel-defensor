@@ -1,6 +1,6 @@
 <div class="col-md-6  py-4 px-5 mobile">
 
-	<h5 class="text-secondary"> Lista de processos judiciais <img src="/img/mais.png" alt="" id="exibir-form-processos"></h5>
+	<h5 class="text-secondary"> Lista de processos judiciais <img src="img/mais.png" alt="" id="exibir-form-processos"></h5>
 
 	<form class="bg-light p-3 mb-3" id="formulario-processos">
          

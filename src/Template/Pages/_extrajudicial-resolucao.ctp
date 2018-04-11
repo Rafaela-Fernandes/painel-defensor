@@ -1,7 +1,7 @@
 <div class="col-md-6 py-4 px-5  mobile">
 
 
-	<h5 class="text-secondary">Resolução extrajudicial <img src="../img/mais.png" alt="" id="exibir-form-resolucao-extraJudicial"> </h5>
+	<h5 class="text-secondary">Resolução extrajudicial <img src="img/mais.png" alt="" id="exibir-form-resolucao-extraJudicial"> </h5>
 	<!-- Formulário Cadastrar tarefa -->
 
 	<form class="bg-light p-3 mb-3" id="formulario-resolucao-extraJudicial">
