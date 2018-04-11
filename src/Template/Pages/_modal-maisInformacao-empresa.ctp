@@ -8,7 +8,7 @@
 				</button>
 			</div>
 			<div class="modal-body">
-				<table class="table table-responsive-md  table-hover mt-4 tabela-responsiva">
+				<table class="table table-responsive-md  table-hover mt-4 ">
 					<thead class="bg-secondary text-white" style="font-size:">
 						<tr>
 							<th scope="col">Nome</th>

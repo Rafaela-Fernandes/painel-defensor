@@ -1,95 +1,87 @@
+<?php use Cake\I18n\Time; ?>
 <!-- Inicio informações do dia agendamentos -->
 <div class="col-md-6 py-4 px-5 mobile">
-	
-	<div class="d-flex justify-content-between mt-4">
-		<div class="input-group contador-todos">
-			<button class="w-75 py-2" type="submit">Todos</button>
-			<span class="w-25 py-2">100</span>
+	<div class="d-flex justify-content-between mt-4 contadores">
+		<div class="input-group pr-3 contador-todos">
+			<input type="radio" name="radio-contadores" id="label-todos" checked>
+			<label for="label-todos" id="todos">Todos</label>
+			<span class="py-2">100</span>
 		</div>
-		<span class="text-white"> sepe</span>
-		<div class="input-group contador-inicial">
-		    <button class="w-75 py-2" type="submit">Inicial</button>
-			<span class="w-25 py-2">30</span>
+
+		<div class="input-group pr-3 contador-inicial">
+			<input type="radio" name="radio-contadores" id="label-inicial">
+			<label for="label-inicial" id="inicial">Inicial</label>
+			<span class="py-2">30</span>
 		</div>
-		<span class="text-white"> sepe</span>
+
 		<div class="input-group contador-retorno">
-		    <button class="w-75 py-2" type="submit">Retorno</button>
-			<span class="w-25 py-2">70</span>
+			<input type="radio" name="radio-contadores" id="label-retorno">
+			<label for="label-retorno" id="retorno">Retorno</label>
+			<span class="py-2">70</span>
 		</div>
 	</div>
 
+	<!-- Filtros -->
 	<form action="" class="mt-4">
 		<div class="input-group mt-3 ">
-			<input type="text" class="form-control data" placeholder="Data Inicial">
-			<input type="text" class="form-control data" placeholder="Data Final">
+			<input type="text" class="form-control data" value="<?= $today ?>" placeholder="Data Inicial">
+			<input type="text" class="form-control data" value="<?= $today ?>" placeholder="Data Final">
 			<div class="input-group-append">
-				<button class="btn text-secondary" type="button" style="border:solid #ced4da 1px; background:#e9ecef">Pesquisar</button>
+				<button class="btn text-secondary btn-personalizado" type="button">Pesquisar</button>
 			</div>
 		</div>
 
 		<div class="input-group mt-3">
-			<input type="text" class="form-control" placeholder=" " aria-label="Recipient's username" aria-describedby="basic-addon2">
+			<input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
 			<div class="input-group-append">
-				<button class="btn text-secondary" type="submit" style="border:solid #ced4da 1px; background:#e9ecef">Pesquisar</button>
+				<button class="btn text-secondary btn-personalizado" type="submit">Pesquisar</button>
 			</div>
 		</div>
 	</form>
 
 
-	
+	<!-- Listagem -->
+	<div class="table-responsive">
+	<table class="table table-hover mt-4">
 
-	<table class="table table-responsive-md table-hover mt-4">
 		<thead class="bg-secondary text-white">
 			<tr>
 				<th scope="col">Data</th>
 				<th scope="col">Hora</th>
 				<th scope="col">Assistido</th>
-				<th scope="col">Tipo Ação</th>
+				<th scope="col">Ação</th>
 				<th scope="col">Opções</th>
+				<th scope="col">Status</th>
 			</tr>
 		</thead>
 		<tbody class="font-td text-center">
-			<tr>
-				<td>18/01/2018</td>
-				<td>09:50</td>
-				<td>PEDRO DA SILVA FERNANDES</td>
-				<td>ALIMENTOS</td>
-				<td>
-					<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
+			
+				<?php
+					foreach($agendamentos as $agendamento):
+						$class = 'inicial';
+						$spam = '<span class="badge badge-pill text-white w-100 py-2" style="background:#2dc76e; font-size:0.7rem">Inicial</span>';
 
-				</td>
-			</tr>
-			<tr>
-				<td>18/01/2018</td>
-				<td>09:50</td>
-				<td>PEDRO DA SILVA FERNANDES</td>
-				<td>ALIMENTOS</td>
-				<td>
-					<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
-				</td>
-			</tr>
-			<tr>
-				<td>18/01/2018</td>
-				<td>09:50</td>
-				<td>PEDRO DA SILVA FERNANDES</td>
-				<td>ALIMENTOS</td>
-				<td>
-					<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
-				</td>
-			</tr>
-			<tr>
-				<td>18/01/2018</td>
-				<td>09:50</td>
-				<td>PEDRO DA SILVA FERNANDES</td>
-				<td>ALIMENTOS</td>
-				<td>
-					<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/524397" target="_blank"> link Sigad</a>
-				</td>
-			</tr>
-
-
+						if($agendamento['tipo_atendimento'])
+						{
+							$class = 'retorno';
+							$spam = '<span class="badge badge-pill text-white w-100 py-2" style="background:#fd8a2a; font-size:0.7rem">Retorno</span>';
+						}
+				?>
+					<tr class="<?= $class ?>">
+						<td><?= Time::parse($agendamento['data'])->i18nFormat('d/M/Y'); ?></td>
+						<td><?= $agendamento['hora'] ?></td>
+						<td><?= $agendamento['assistido'] ?></td>
+						<td><?= $agendamento['acao'] ?></td>
+						<td>
+							<a href="http://sigad.defensoria.ba.def.br/assistidos/extrato/<?= $agendamento['assistido_id'] ?>" target="_blank"> link Sigad</a>
+						</td>
+						<td><?= $spam ?></td>
+					</tr>
+				<?php endforeach; ?>
+		
 		</tbody>
 	</table>
-
+</div>
 </div>
 <!-- Fim Informações do dia agendamentos -->
+

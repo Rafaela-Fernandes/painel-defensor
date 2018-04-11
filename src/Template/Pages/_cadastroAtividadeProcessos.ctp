@@ -1,23 +1,29 @@
 <div class="col-md-6 py-4 px-5  mobile">
 
 
-	<h5 class="text-secondary">Cadastrar atividades referente a processos  <img src="/img/mais.png" alt="" id="exibir-form"> </h5>
+	<h5 class="text-secondary">Cadastrar atividades referente a processos <img src="img/mais.png" alt="" id="exibir-form-atividade-processos"> </h5>
 	<!-- Formulário Cadastrar tarefa -->
-	<form action="" method="" class="bg-light p-3 mb-3" id="formulario-tarefas">
+	<form action="" method="" class="bg-light p-3 mb-3" id="formulario-atividade-processo">
 		<div class="form-row">
-			<div class="form-group col-md-6">
-				<input name="titulo" type="text" class="form-control" placeholder="Nº Processo">
+			<div class="input-group mb-3 col-md-12">
+				<div class="input-group-prepend">
+					<span class="input-group-text text-secondary" placeholder="">Nª Processos</span>
+				</div>
+				<input name="titulo" type="text" class="form-control mask-processo" placeholder="">
 			</div>
-			<div class="form-group col-md-6">
-				<select id="" class="form-control">
-					<option selected> Atvidades</option>
+			<div class="input-group mb-3 col-md-12">
+				<div class="input-group-prepend">
+					<label class="input-group-text text-secondary" for="">Tipo Resolução</label>
+				</div>
+				<select id="" class="custom-select">
+					<option selected></option>
 					<option>Participação em Audiências</option>
 					<option>Réplica</option>
 					<option>Contestação</option>
 				</select>
 			</div>
 		</div>
-		<div class="form-row d">
+		<div class="form-row">
 			<!-- text area oculto -->
 			<div class="form-group col-md-12">
 				<textarea class="form-control" rows="4" placeholder="Observação"></textarea>
@@ -31,8 +37,8 @@
 	<!-- Formulário Cadastrar tarefa -->
 
 	<div class="mt-3 input-group contador-agendamento">
-		<span class="w-50 py-2">Atividade Cadastradas</span>
-		<span class="w-50 py-2"> 4</span>
+		<span class="w-75 py-2">Atividade Cadastradas</span>
+		<span class="w-25 py-2"> 4</span>
 	</div>
 	<form action="" method="" class="mt-4">
 
@@ -44,7 +50,8 @@
 		</div>
 
 	</form>
-	<table class="table table-responsive-md  table-hover mt-4 tabela-responsiva">
+	<div class="table-responsive">
+	<table class="table table-hover mt-4 ">
 		<thead class="bg-secondary text-white" style="font-size:">
 			<tr>
 				<th scope="col">Processo</th>
@@ -68,7 +75,7 @@
 			<tr>
 				<td>00010008056565</td>
 				<td>Contestação</td>
-				<td>ir para contestação, nossa terei que ir para contestação, legal legal legal</td>
+				<td>ir para contestação, nossa terei que ir para contestação, legal legal legals</td>
 				<td>
 					<a href="#"><img src="" alt=""><img src="img/editar.png"></a>
 					<a href="#"><img src="" alt=""><img src="img/excluir.png"></a>
@@ -97,4 +104,5 @@
 			</tr>
 		</tbody>
 	</table>
+   </div>
 </div>

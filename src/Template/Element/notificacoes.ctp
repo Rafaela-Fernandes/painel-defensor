@@ -55,7 +55,7 @@
 
 <div class="d-flex justify-content-between mt-4">
 <div>
-	<span class="h6 text-light"> Prazos Excedidos</span> <span class="badge badge-primary py-1 px-3">2</span> 
+	<span class="h6 text-light"> Prazos a Exceder</span> <span class="badge badge-primary py-1 px-3">2</span> 
 </div>
 <div>
 	<img src="img/lixeira.png"> <span class="text-white">Excluir tudo</span>

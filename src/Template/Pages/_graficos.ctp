@@ -1,14 +1,14 @@
 
 <div class="col-md-12 mobile">  
  
-   	<a class="scroll-tabela text-secondary" href="#tabela" style="position: absolute; top:7%; right:6%; z-index:3; cursor:pointer" >Exibir Tabela</a> 
+   	<a class="scroll-tabela text-secondary" href="#tabela" id="texto-exibitTabela">Exibir Tabela</a> 
 	<div class="" id="container" height="100px"></div>
 
 </div>
   
 <div class=" tabela-esconder col-md-12 pb-5  mobile">
-	<table class=" table table-responsive-md table-hover mt-4 " id="tabela">
-		<thead class="text-white text-center" style="background:#27ae60">
+	<table class=" table table-responsive-md table-hover mt-4">
+		<thead class="text-white text-center bg-success">
 			<tr>
 				<th scope="col" colspan="2">Fevereiro</th>
 			</tr>
@@ -48,13 +48,7 @@
 
 </div>
 
- <style>
 
- .tabela-esconder{
-	display: none;
-}
-
-</style>
 
 <script>
 	$(document).ready(function() {
@@ -98,24 +92,3 @@
 </script>
 
 
-
-<script>
-
-  $(document).ready(function(){
-	 
-	  	$(".scroll-tabela").click(function (event) {
-		 event.preventDefault();
-			
-			 $('.tabela-esconder').toggle('slow');
-			 $('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);
-		
-	        
-	});
-
-  });
-	
- $('.tabela-esconder').dblclick(function() {
-    $('.tabela-esconder').hide('slow');
-});
-	
-</script>
