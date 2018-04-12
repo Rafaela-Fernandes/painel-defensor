@@ -16,7 +16,7 @@
 		<div class="form-row" >
 			<div class=" input-group col-md-12 mb-3" id="tipo-resolucao-extra-judicial" >
 			    <div class="input-group-prepend">
-				<label class="input-group-text text-secondary" for="">Tipo Resolução</label>
+				<label class="input-group-text text-secondary" for="">Tipo de Resolução</label>
 			    </div>
 				<select id="" class="custom-select" >
 					<option value="" selected></option>
