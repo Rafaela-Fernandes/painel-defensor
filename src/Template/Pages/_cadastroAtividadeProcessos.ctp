@@ -13,7 +13,7 @@
 			</div>
 			<div class="input-group mb-3 col-md-12">
 				<div class="input-group-prepend">
-					<label class="input-group-text text-secondary" for="">Ato praticado</label>
+					<label class="input-group-text text-secondary" for="">Ato Praticado</label>
 				</div>
 				<select id="" class="custom-select">
 					<option selected></option>
@@ -24,7 +24,6 @@
 			</div>
 		</div>
 		<div class="form-row">
-			<!-- text area oculto -->
 			<div class="form-group col-md-12">
 				<textarea class="form-control" rows="4" placeholder="Observação"></textarea>
 			</div>

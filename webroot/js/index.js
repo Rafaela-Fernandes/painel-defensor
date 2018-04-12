@@ -4,13 +4,14 @@ $(document).ready(function () {
 	voltarInicioPagina();
 	exibeInput();
 	exibirMunicipios_exibirCampoOutros();
-	exibicaoInputs();
+	exibicaoforms();
 	exibirMenuLateral();
 	mascarasInputs();
 	contadoresAbaAgendamento();   /* só para desmostraçao visual, será apagado*/
 	contadoresModalAgendamento(); /* só para desmostraçao visual, será apagado*/
     exibirTabelaGrafico();
 	inputNovoAtendimento();
+	exibirSelectsAtividades();
 });
 
 
@@ -54,9 +55,6 @@ function contadoresAbaAgendamento(){
 	 
 }
 
-
-
-
 function exibirTabelaGrafico(){
 	  $(document).ready(function(){
 	 
@@ -85,7 +83,6 @@ function mascarasInputs(){
         mask: '99/99/9999'
     });
 }
-
 
 function exibirMenuLateral(){
 	
@@ -135,7 +132,6 @@ function exibirNotificacoes() {
 
 }
 
-
 function exibirData() {
 	$(".data").datepicker({
 		changeMonth: true,
@@ -147,7 +143,6 @@ function exibirData() {
 		monthNamesShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
 	});
 }
-
 
 function voltarInicioPagina() {
 	$(window).scroll(function () {
@@ -170,8 +165,7 @@ function voltarInicioPagina() {
 
 }
 
-
-function exibicaoInputs() {
+function exibicaoforms() {
 
 	$("#exibir-form-audiencias").on("click", function () {
 		$("#formulario-cadastrar-audiencias").toggle("fade");
@@ -202,7 +196,6 @@ function exibicaoInputs() {
 	
 }
 
-
 function inputNovoAtendimento(){
 	
 	$('#form-pesquisar').submit(function(event){
@@ -222,8 +215,6 @@ function inputNovoAtendimento(){
 	});
 	
 }
-
-
 
 function exibeInput() {
 	
@@ -291,3 +282,18 @@ function exibirMunicipios_exibirCampoOutros() {
 		}
 	})
 }
+
+function exibirSelectsAtividades(){
+		
+$("input[value=interna]").on( "click", function() {
+     $("#select-at-interna").show('slow');
+     $("#select-at-externa").hide('slow');
+});
+	
+$("input[value=externa]").on( "click", function() {
+     $("#select-at-externa").show('slow');
+     $("#select-at-interna").hide('slow');
+});	
+	
+}
+

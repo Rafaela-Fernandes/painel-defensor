@@ -20,12 +20,63 @@
 				<input type="text" class="form-control data" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 			</div>
 		</div>
+        <hr>
+        <div class="form-row">
+			<div class="form-group col-md-12 form-radio mt-2">
+				<span>Tipo de Atividade</span>
+				<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio"  name="tipo-atividade" value="interna" class="custom-control-input" id="atividade-interna">
+					<label class="custom-control-label  bordas-radio" for="atividade-interna">Interna</label>
+				</div>
+				<div class="custom-control custom-radio custom-control-inline">
+					<input type="radio"  name="tipo-atividade" value="externa" class="custom-control-input" id="atividade-externa">
+					<label class="custom-control-label  bordas-radio" for="atividade-externa">Externa</label>
+				</div>
+			</div>
+		</div>
+    	<hr>
+    	<div class="form-row">
+			<div class=" input-group col-md-12 mt-2" id="select-at-interna" style="display:none" >
+			    <div class="input-group-prepend">
+				<label class="input-group-text text-secondary" for="">Selecione Atividade Interna</label>
+			    </div>
+				<select class="custom-select" >
+					<option value="" selected></option>
+					<option value="">interna</option>
+					<option value="">interna</option>
+					<option value="">interna</option>
+				
+					
+				</select>
+			</div>
+			
+			<div class=" input-group col-md-12 mt-2" id="select-at-externa"  style="display:none" >
+			    <div class="input-group-prepend">
+				<label class="input-group-text text-secondary" for="">Selecione Atividade Externa</label>
+			    </div>
+				<select class="custom-select" >
+					<option value="" selected></option>
+					<option value="">externa</option>
+					<option value="">externa</option>
+					<option value="">externa</option>	
+				</select>
+			</div>
+		</div>
+    	
 	    <div class="form-row">
-			<div class="input-group mb-3 col-md-12">
+			<div class="input-group mb-3 col-md-12 mt-3">
 				<div class="input-group-prepend">
 					<span class="input-group-text text-secondary">Público Total Atingido</span>
 				</div>
 				<input type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+			</div>
+		</div>
+		  <div class="form-row">
+			<div class="input-group mb-3 col-md-12">
+				<div class="input-group-prepend">
+					<span class="input-group-text text-secondary">Anexar Lista de Presença</span>
+				</div>
+				<input type="file" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 			</div>
 		</div>
 		<div class="form-row">
@@ -42,7 +93,7 @@
 				</select>
 			</div>
 		</div>
-		<button type="submit" class="btn btn-success btn-block mt-3"> Cadastrar</button>
+		<button type="submit" class="btn btn-success btn-block mt-3" name="botao-at-institucional"> Cadastrar</button>
 	</form>
 </div>
 
@@ -92,3 +143,7 @@
 	</table>
 </div>
 </div>
+
+
+
+
