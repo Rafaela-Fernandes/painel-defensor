@@ -6,7 +6,7 @@
 		<div class="form-row">
 			<div class="input-group mb-3 col-md-12">
 				<div class="input-group-prepend">
-					<span class="input-group-text text-secondary" placeholder="">Prazo</span>
+					<span class="input-group-text text-secondary" placeholder="">Titulo Tarefa</span>
 				</div>
 				<input type="text" class="form-control data" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 			</div>
@@ -35,8 +35,8 @@
 			</div>
 		</div>
 	 
-	 <hr>
-	<h5 class="text-secondary mt-3"> Vincular processo </h5> 
+	<!-- <hr>
+	 <h5 class="text-secondary mt-3"> Vincular processo </h5> 
      <div class="form-row mt-3 ">
 			<div class="input-group col-md-12">
 				<div class="input-group-prepend">
@@ -53,7 +53,7 @@
 					<option value="">Exibição de procuração pelo advogado (prorrogável)</option>
 				</select>
 			</div>
-		</div>
+		</div> -->
 		
 		<div class="form-row mt-3 mb-4">
 			<div class="input-group  col-md-6">
