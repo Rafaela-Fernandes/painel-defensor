@@ -29,7 +29,7 @@
 		<div class="form-row mt-3">
 			<div class="input-group  col-md-12">
 				<div class="input-group-prepend">
-					<span class="input-group-text text-secondary">Nº Processo</span>
+					<span class="input-group-text text-secondary">Nº do Processo</span>
 				</div>
 				<input type="text" class="form-control .mask-processo" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 			</div>

@@ -13,7 +13,7 @@
 			</div>
 			<div class="input-group mb-3 col-md-12">
 				<div class="input-group-prepend">
-					<label class="input-group-text text-secondary" for="">Tipo Resolução</label>
+					<label class="input-group-text text-secondary" for="">Ato praticado</label>
 				</div>
 				<select id="" class="custom-select">
 					<option selected></option>
