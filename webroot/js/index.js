@@ -56,22 +56,20 @@ function contadoresAbaAgendamento(){
 }
 
 function exibirTabelaGrafico(){
-	  $(document).ready(function(){
-	 
-	  	$(".scroll-tabela").click(function (event) {
-		 event.preventDefault();
-			
-			 $('.tabela-esconder').toggle('slow');
-			 $('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);        
-	});
-
-  });
 	
- $('.tabela-esconder').dblclick(function() {
+	
+	  $(".scroll-tabela").click(function(event){        
+        event.preventDefault();
+		  $('.tabela-esconder').slideDown(500);
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 600);
+   });
+	
+	
+	 $('.tabela-esconder').dblclick(function() {
     $('.tabela-esconder').hide('slow');
-});
-	
+    });
 }
+
 
 function mascarasInputs(){
 	

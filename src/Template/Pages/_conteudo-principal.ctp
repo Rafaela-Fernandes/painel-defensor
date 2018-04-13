@@ -38,7 +38,7 @@
 		
 		<!-- ------------ GRÁFICOS --------------- -->
 		<a class="nav-item nav-link " data-toggle="tab" href="#sessao-graficos" role="tab" aria-controls="nav" aria-selected="false" id="graficos">
-			<p>GRÁFICOS</p>
+			<p>RELATÓRIOS</p>
 		</a>
 	</div>
 </nav>
