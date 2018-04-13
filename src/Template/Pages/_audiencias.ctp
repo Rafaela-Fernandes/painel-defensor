@@ -111,6 +111,7 @@
 				<th scope="col">Assistido</th>
 				<th scope="col">Resultado</th>
 				<th scope="col">Opções</th>
+				<th scope="col">Data do Cadastro</th>
 			</tr>
 		</thead>
 		<tbody class="font-td">
@@ -122,6 +123,7 @@
 				<td>Celia Maria Dantas</td>
 				<td>Provida</td>
 				<td><a href="#"><img src="img/editar.png" alt=""></a></td>
+				<td>01/03/2018</td>
 			</tr>
 			<tr>
 				<td>01/03/2018</td>
@@ -130,6 +132,7 @@
 				<td>Celia Maria Dantas</td>
 				<td>Improvida</td>
 				<td><a href="#"><img src="img/editar.png" alt=""></a></td>
+					<td>01/03/2018</td>
 			</tr>
 			<tr>
 				<td>01/03/2018</td>
@@ -138,6 +141,7 @@
 				<td>Celia Maria Dantas</td>
 				<td>Provida</td>
 				<td><a href="#"><img src="img/editar.png" alt=""></a></td>
+					<td>01/03/2018</td>
 			</tr>
 			<tr>
 				<td>01/03/2018</td>
@@ -146,6 +150,7 @@
 				<td>Celia Maria Dantas</td>
 				<td>Improvida</td>
 				<td><a href="#"><img src="img/editar.png" alt=""></a></td>
+					<td>01/03/2018</td>
 			</tr>
 
 		</tbody>

@@ -12,6 +12,7 @@ $(document).ready(function () {
 	exibirTabelaGrafico();
 	inputNovoAtendimento();
 	exibirSelectsAtividades();
+	selectUnidadeJudicial();
 });
 
 
@@ -296,4 +297,15 @@ function exibirSelectsAtividades() {
 		$("#select-at-interna").hide('slow');
 	});
 
+}
+
+function selectUnidadeJudicial(){
+	
+	$("#opcoes-exibir-grafico").change(function(){
+		if($('[value=1]').is('option:selected')){
+			$("#select-unidade-judicial").show("slow");
+		}else{
+			$("#select-unidade-judicial").hide("slow");
+		}
+	})
 }
