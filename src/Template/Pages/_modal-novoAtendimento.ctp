@@ -55,6 +55,7 @@
 			</select>
 		</div>
 		
+		
 		<div class="input-group" id="tipo-especializada" style="display:none">
 			<div class="input-group-prepend">
 				<label class="input-group-text text-secondary" for="especializada">Tipo de Especializada</label>
@@ -66,6 +67,19 @@
 				<option value="3">dh</option>
 			</select>
 		</div>
+		
+		<div class="input-group mt-3" id="area-atuacao" style="display:none">
+			<div class="input-group-prepend">
+				<label class="input-group-text text-secondary" for="select-area-atuacao">Área de Atuação</label>
+			</div>
+			<select class="custom-select" id="select-area-atuacao">
+				<option selected></option>
+				<option value="1">cível</option>
+				<option value="2">criminal</option>
+				<option value="3">dh</option>
+			</select>
+		</div>
+	
 	</form>
 </div>
       </div>
