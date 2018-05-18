@@ -1,0 +1,225 @@
+/* css das tabs atendimento*/
+a{
+	text-decoration: none !important;
+}
+
+td[colspan="6"]{
+		
+		border-bottom: solid #a8ceb0 1px;
+	}
+
+#div-extrato h4, #div-extrato hr{
+	padding: 0;
+	   margin: 0;
+		font-weight:b
+}
+.wdt{
+	width: 88%;
+}
+.p-select{
+	padding: 0.68rem 1.75rem 2rem 0.75rem
+}
+.p-span{
+	padding: 0.58rem;
+}
+#nav-principal-atendimento{
+    background: #dedede;
+}
+
+.btn-verde{
+	background: #27ae60;
+	color:#FFF;
+}
+
+.btn-verde:hover{
+	background: #22814a;
+	color:#FFF;
+}
+#tabs-ancora-atendimento a{
+	color: #343a40;
+    text-align: center;
+    font-weight: 500;
+    width: 14.28%;
+}
+
+#tabs-ancora-atendimento p {
+    margin-top: 5rem;
+    font-size: 0.85rem !important;
+}
+
+
+#cadastro-link{
+    background-image: url(../img/cad-usuario.png);
+    background-repeat: no-repeat;
+    background-position: 55% 25%;
+}
+
+#cadastro-link.active, #cadastro-link:hover {
+    background-image: url(../img/cad-usuario2.png);
+    background-repeat: no-repeat;
+    background-position:55% 25%;
+    background-color: #343a40;
+    height: auto;
+    color: #fff;
+    border-radius: 0 0 0 0 !important;
+}
+
+
+#agendamento-link{
+    background-image: url(../img/agendamentos.png);
+    background-repeat: no-repeat;
+    background-position: 55% 25%;
+}
+
+#agendamento-link.active, #agendamento-link:hover {
+    background-image: url(../img/agendamentos2.png);
+    background-repeat: no-repeat;
+    background-position:55% 25%;
+    background-color: #343a40;
+    height: auto;
+    color: #fff;
+    border-radius: 0 0 0 0 !important;
+}
+
+#processo-link{
+    background-image: url(../img/processos.png);
+    background-repeat: no-repeat;
+    background-position: 55% 25%;
+}
+
+#processo-link.active, #processo-link:hover {
+    background-image: url(../img/processos2.png);
+    background-repeat: no-repeat;
+    background-position:55% 25%;
+    background-color: #343a40;
+    height: auto;
+    color: #fff;
+    border-radius: 0 0 0 0 !important;
+}
+
+#orientacao-link{
+    background-image: url(../img/orientacao.png);
+    background-repeat: no-repeat;
+    background-position: 55% 25%;
+}
+
+#orientacao-link.active, #orientacao-link:hover {
+    background-image: url(../img/orientacao2.png);
+    background-repeat: no-repeat;
+    background-position:55% 25%;
+    background-color: #343a40;
+    height: auto;
+    color: #fff;
+    border-radius: 0 0 0 0 !important;
+}
+
+
+#tela-link{
+    background-image: url(../img/tela.png);
+    background-repeat: no-repeat;
+    background-position: 55% 25%;
+}
+
+#tela-link.active, #tela-link:hover {
+    background-image: url(../img/tela1.png);
+    background-repeat: no-repeat;
+    background-position:55% 25%;
+    background-color: #343a40;
+    height: auto;
+    color: #fff;
+    border-radius: 0 0 0 0 !important;
+}
+
+#anexo-link{
+    background-image: url(../img/anexo.png);
+    background-repeat: no-repeat;
+    background-position: 55% 25%;
+}
+
+#anexo-link.active, #anexo-link:hover {
+    background-image: url(../img/anexo1.png);
+    background-repeat: no-repeat;
+    background-position:55% 25%;
+    background-color: #343a40;
+    height: auto;
+    color: #fff;
+    border-radius: 0 0 0 0 !important;
+}
+
+#extrato-link{
+    background-image: url(../img/extrato-tab.png);
+    background-repeat: no-repeat;
+    background-position: 55% 25%;
+}
+
+#extrato-link.active, #extrato-link:hover {
+    background-image: url(../img/extrato1-tab.png);
+    background-repeat: no-repeat;
+    background-position:55% 25%;
+    background-color: #343a40;
+    height: auto;
+    color: #fff;
+    border-radius: 0 0 0 0 !important;
+}
+
+
+.imagens img {
+	
+	width: 75%
+}
+/* CSS TABS CADASTRO*/
+.form-label span{
+	width: 10.3rem;
+	
+} 
+
+.form-label-gerenciar-processos span {
+	width:  11.5rem;
+}
+
+#nav-tab-cadastro a{
+	 background:#e9ecef;
+	 color: #868e96;
+	 padding: 0.7rem;
+	 width: 15%;
+	 border:solid #ced4da 1px;
+	 border-radius: 0;
+	
+	
+}
+#nav-tab-agendamento a{
+	 background:#e9ecef;
+	 color: #868e96;
+	 padding: 0.7rem;
+	 width: 18%;
+	 border:solid #ced4da 1px;
+	 border-radius: 0;
+	
+	
+}
+#nav-tab-cadastro a:hover, #nav-tab-agendamento a:hover{
+	background: #515861;
+     color: #FFF;
+}
+#nav-tab-cadastro a.active, #nav-tab-agendamento a.active {
+	background: #515861;
+	border:solid #ced4da 1px;
+	border-bottom: none;
+	color: #FFF;
+	border-radius: 0;
+}
+
+
+#modal-processos{
+	width: 180%;
+	right: 50%;
+}
+
+#modal-extrato-conteudo{
+	width: 280%;
+	right: 90%;
+}
+
+#modal-header-gerenciar-processos{
+	border-radius: 0;
+}

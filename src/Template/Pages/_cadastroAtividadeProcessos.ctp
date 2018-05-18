@@ -30,7 +30,7 @@
 		</div>
 
 
-		<button type="submit" class="btn btn-success btn-block"> Cadastrar</button>
+		<button type="submit" class="btn btn-verde btn-block"> Cadastrar</button>
 
 	</form>
 	<!-- Formulário Cadastrar tarefa -->

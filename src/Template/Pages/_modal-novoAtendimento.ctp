@@ -84,7 +84,7 @@
 </div>
       </div>
       <div class="modal-footer">
-        <button type="submit" class="btn btn-success" data-dismiss="modal">Atender</button>
+        <button type="submit" class="btn btn-verde" data-dismiss="modal">Atender</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
       </div>
     </div>

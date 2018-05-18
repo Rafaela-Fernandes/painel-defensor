@@ -74,7 +74,7 @@
 				</div> -->
 				<input type="file" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 			</div>
-			<button type="submit" class="btn btn-success w-100"> Enviar</button>
+			<button type="submit" class="btn btn-verde w-100"> Enviar</button>
 		</div>
 	</form>
 	

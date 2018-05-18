@@ -26,9 +26,7 @@ hr {
 }
 
 
-#menu-suspenso {
-	margin-left: 0.2rem;
-}
+
 
 
 #atendimento-img{
@@ -51,6 +49,32 @@ hr {
 	text-decoration: none;
 	color:#FFF;
 	margin-left: 2.7rem;
+}
+
+/*--------- css header  ---------------------------*/
+
+#menu-header{
+	background:#3a424a;
+	padding-bottom:0.6rem !important;	
+			
+}
+
+#menu-header:hover{
+	background: #343a40;
+	transition: all 1s;
+}
+
+.cabecalho {
+		padding: 0.4rem;
+	     	
+	}
+
+
+#nav-header {
+	padding:0;
+	background: #3a424a;
+		
+			
 }
 
 
@@ -343,18 +367,8 @@ img {
 }
 
 
-#nav-header div:first-child:hover{
-	background: #404952;
-	transition: all 1s;
-}
 
-.cabecalho {
-	padding: 0.4rem;
-}
 
-#nav-header {
-	padding:0;
-}
 
 
 /*--------------css para mobile--------------------------------*/
@@ -438,7 +452,7 @@ img {
 
 }
 
-/* css dos caontadores geral*/
+/* css dos contadores geral*/
 
 .contador-agendamento span:first-child {
 	background: #17a2b8;
@@ -457,7 +471,7 @@ img {
 }
 
 .not:hover{
-	background-color: #343a40 !important;
+	background-color: #3a424a!important;
 	border: 0 !important;
 }
 
@@ -486,8 +500,6 @@ select option {
 
 
 /* css contadores inicial/retorno/todos */
-
-
 /* só para simulação será apagado,*/
 
 [name="radio-contadores"],[name="radio-contadores-modal"] {

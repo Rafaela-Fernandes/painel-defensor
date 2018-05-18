@@ -134,7 +134,7 @@
 					<input type="text" class="form-control data" placeholder="Data final">
 				</div>
 				<div class="col-md-2">
-					<button type="submit" class="btn btn-success btn-block">Pesquisar</button>
+					<button type="submit" class="btn btn-verde btn-block">Pesquisar</button>
 				</div>
 			</div>
 			

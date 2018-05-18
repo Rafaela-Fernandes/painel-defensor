@@ -93,7 +93,7 @@
 				</select>
 			</div>
 		</div>
-		<button type="submit" class="btn btn-success btn-block mt-3" name="botao-at-institucional"> Cadastrar</button>
+		<button type="submit" class="btn btn-verde btn-block mt-3" name="botao-at-institucional"> Cadastrar</button>
 	</form>
 </div>
 

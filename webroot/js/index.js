@@ -199,7 +199,7 @@ function exibicaoforms() {
 function inputNovoAtendimento() {
 
 	$('#form-pesquisar').submit(function (event) {
-
+          event.preventDefault();
 		$('.exibir-form-tabela').show('slow');
 	});
 
@@ -215,7 +215,7 @@ function inputNovoAtendimento() {
 			$('#area-atuacao').hide("slow");
 		}
 	});
-	event.preventDefault();
+	
 }
 
 function exibeInput() {

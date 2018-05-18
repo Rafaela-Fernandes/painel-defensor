@@ -92,7 +92,7 @@
 			</div>
 		</div>
 		<hr>
-		<button type="submit" class="btn btn-success btn-block mt-3"> Cadastrar</button>
+		<button type="submit" class="btn btn-verde btn-block mt-3"> Cadastrar</button>
 	</form>
 
 
