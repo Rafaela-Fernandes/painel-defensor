@@ -56,7 +56,12 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
      <script type="text/javascript" src="js/tinymce.min.js"></script>
      <script type="text/javascript" src="js/pt_BR.js"></script>
 
-   
+      <!-- TimeLine js e css  -->
+       <script type="text/javascript" src="js/timeline.min.js"></script>
+      <link type="text/css" href="css/timeline.min.css" rel="stylesheet">
+      
+      
+      
     <title>
         <?= $cakeDescription ?>:
         <?= $this->fetch('title') ?>
